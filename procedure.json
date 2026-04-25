@@ -1,0 +1,617 @@
+{
+  "procedure_document_schema": {
+    "document_type": "Procedure",
+    "document_family": "ClientX Ministerial Cybersecurity Procedure",
+    "family_type": "Detailed Operational Procedure",
+    "language_mode": "English technical language",
+    "purpose_of_family": "Produce ministry-grade cybersecurity procedures that operationalize policy and standard requirements into detailed, executable, role-specific steps that are auditable, visually consistent, and structurally aligned to ClientX document model.",
+    "audience": [
+      "procedure executors",
+      "control owners",
+      "system owners",
+      "cybersecurity operations teams",
+      "identity and access management teams",
+      "service desk and support teams",
+      "review and audit stakeholders",
+      "approvers and escalation authorities"
+    ],
+    "lineage_requirements": {
+      "parent_policy_reference": true,
+      "parent_standard_reference": true,
+      "linked_forms_and_templates": true
+    },
+    "page_model": {
+      "target_page_count": {
+        "min": 18,
+        "typical": 30,
+        "max": 50
+      },
+      "page_allocation": {
+        "cover_page": 1,
+        "table_of_contents": 1,
+        "document_information": 1,
+        "definitions_objective_scope_roles": "2-3",
+        "procedure_overview_and_inputs": "1-2",
+        "detailed_procedure_steps": "12-30",
+        "decision_points_exceptions_records_and_timings": "2-4",
+        "approval_and_version_control": 1,
+        "optional_appendices": "1-5"
+      }
+    },
+    "visual_system": {
+      "rtl": true,
+      "branding": {
+        "include_ministry_logo_top_right": true,
+        "include_Client SLOGAN_top_left": true
+      },
+      "cover_page": {
+        "style": "full-page branded cover",
+        "background": "dark green ministry gradient",
+        "title_position": "center-lower third",
+        "metadata_position": "bottom-right",
+        "required_fields": [
+          "procedure_title_ar",
+          "version_number",
+          "issue_date",
+          "classification"
+        ]
+      },
+      "internal_pages": {
+        "header": {
+          "show_reference_version_issue_date": true,
+          "show_logos": false
+        },
+        "footer": {
+          "show_page_number": true,
+          "show_classification_bilingual": true
+        },
+        "watermark": {
+          "enabled": true,
+          "text": "Draft",
+          "style": "large diagonal light gray"
+        }
+      },
+      "accent_colors": {
+        "primary_dark_green": "#0F4D43",
+        "secondary_green": "#2E7D6B",
+        "neutral_light": "#F4F4F4",
+        "border_gray": "#D9D9D9"
+      },
+      "tables": {
+        "header_fill": "primary_dark_green",
+        "header_text_color": "white",
+        "body_fill": "white",
+        "border_style": "thin gray grid"
+      },
+      "typography": {
+        "title_weight": "bold",
+        "section_heading_weight": "bold",
+        "body_style": "formal Arabic procedural prose",
+        "technical_gloss_style": "Arabic term followed by English in parentheses when needed"
+      }
+    },
+    "document_order": [
+      "cover",
+      "table_of_contents",
+      "document_information",
+      "1. definitions_and_abbreviations",
+      "2. procedure_objective",
+      "3. scope_and_applicability",
+      "4. roles_and_responsibilities",
+      "5. procedure_overview",
+      "6. triggers_prerequisites_inputs_and_tools",
+      "7. detailed_procedure_steps",
+      "8. decision_points_exceptions_and_escalations",
+      "9. outputs_records_evidence_and_forms",
+      "10. time_controls_service_levels_and_control_checkpoints",
+      "11. related_documents",
+      "12. effective_date",
+      "13. procedure_review",
+      "14. review_and_approval",
+      "15. version_control",
+      "optional_appendices"
+    ],
+    "section_blueprints": {
+      "cover": {
+        "required_elements": [
+          "procedure_title_ar",
+          "optional_procedure_title_en_if_used",
+          "version_number",
+          "issue_date",
+          "classification"
+        ],
+        "writing_rules": [
+          "No body prose on cover",
+          "Minimal metadata only",
+          "Title must dominate the page"
+        ]
+      },
+      "table_of_contents": {
+        "required_elements": [
+          "fixed top-level section list",
+          "page numbers"
+        ],
+        "writing_rules": [
+          "Use only top-level sections in the TOC",
+          "Keep structure stable across procedure documents"
+        ]
+      },
+      "document_information": {
+        "required_fields": {
+          "procedure_owner": true,
+          "department": true,
+          "document_type": true,
+          "version_number": true,
+          "issue_date": true,
+          "reference_number": true,
+          "parent_policy_reference": true,
+          "parent_standard_reference": true,
+          "publication_location": true
+        },
+        "writing_rules": [
+          "Use a compact metadata table",
+          "Do not replace metadata with narrative prose"
+        ]
+      },
+      "1. definitions_and_abbreviations": {
+        "function": "Define operational and technical terms required to execute the procedure consistently",
+        "structure": {
+          "definition_table": true
+        },
+        "table_columns": [
+          "Term",
+          "Definition"
+        ],
+        "expected_length": {
+          "terms_min": 5,
+          "terms_max": 15
+        },
+        "required_term_types": [
+          "administrative terms",
+          "process-specific terms",
+          "technical terms used in the steps",
+          "form or record terminology if needed"
+        ],
+        "writing_rules": [
+          "Definitions must support execution, not theory",
+          "Only define terms that are actually used in the procedure",
+          "Prefer short operational definitions"
+        ]
+      },
+      "2. procedure_objective": {
+        "function": "State what the procedure operationalizes and what operational outcome it is intended to achieve",
+        "structure": {
+          "paragraph_count": "1-2"
+        },
+        "expected_content": [
+          "the operational purpose of the procedure",
+          "what policy and standard requirements it implements",
+          "the intended control or service outcome"
+        ],
+        "writing_rules": [
+          "Concise formal prose",
+          "No step detail here",
+          "No generic mission language"
+        ]
+      },
+      "3. scope_and_applicability": {
+        "function": "Define where, when, and to whom the procedure applies",
+        "structure": {
+          "intro_paragraph": true,
+          "optional_bullets": true
+        },
+        "expected_content": [
+          "covered people",
+          "covered systems and environments",
+          "covered scenarios or trigger situations",
+          "covered transactions or activities"
+        ],
+        "writing_rules": [
+          "Applicability only",
+          "Do not place execution logic here"
+        ]
+      },
+      "4. roles_and_responsibilities": {
+        "function": "Assign execution, review, approval, and escalation responsibilities",
+        "structure": {
+          "role_table": true
+        },
+        "table_columns": [
+          "Role",
+          "Responsibility in the Procedure"
+        ],
+        "expected_roles": [
+          "requestor or initiator",
+          "reviewer",
+          "approver",
+          "executor",
+          "control owner",
+          "system owner",
+          "escalation authority",
+          "audit or compliance role where relevant"
+        ],
+        "writing_rules": [
+          "Each role must be tied to specific execution responsibilities",
+          "Do not use generic governance-only language"
+        ]
+      },
+      "5. procedure_overview": {
+        "function": "Provide a concise operational overview before the detailed steps",
+        "structure": {
+          "overview_paragraph": true,
+          "optional_process_summary_table": true
+        },
+        "expected_content": [
+          "process start event",
+          "process end state",
+          "high-level phases",
+          "main handoffs between roles"
+        ],
+        "writing_rules": [
+          "Keep concise",
+          "This section is orientation, not the full step detail"
+        ]
+      },
+      "6. triggers_prerequisites_inputs_and_tools": {
+        "function": "Define what starts the procedure, what must exist beforehand, and what is needed to execute it",
+        "structure": {
+          "subsections": [
+            "triggers",
+            "prerequisites",
+            "inputs",
+            "systems_and_tools",
+            "forms_and_templates"
+          ]
+        },
+        "writing_rules": [
+          "Use tables or concise lists",
+          "Make execution dependencies explicit"
+        ],
+        "recommended_tables": {
+          "triggers": [
+            "Trigger",
+            "Description"
+          ],
+          "prerequisites": [
+            "Prerequisite",
+            "Owner"
+          ],
+          "inputs": [
+            "Input",
+            "Source"
+          ],
+          "systems_and_tools": [
+            "System or Tool",
+            "Purpose"
+          ],
+          "forms_and_templates": [
+            "Form or Template",
+            "Reference"
+          ]
+        }
+      },
+      "7. detailed_procedure_steps": {
+        "function": "Provide the full executable procedure in detailed sequence",
+        "dominance_rule": "This must be the longest and most detailed section in the document",
+        "word_share_target": "40% to 60% of total document",
+        "required_structure": {
+          "procedure_phases": true,
+          "numbered_steps": true,
+          "decision_points": true,
+          "handoffs": true
+        },
+        "phase_template": {
+          "required_fields": [
+            "phase_title",
+            "phase_objective",
+            "entry_condition_or_trigger",
+            "responsible_role",
+            "participating_roles",
+            "prerequisites_if_phase_specific",
+            "inputs",
+            "systems_or_tools",
+            "numbered_steps",
+            "decision_points_if_any",
+            "outputs",
+            "evidence_generated",
+            "handoff_to_next_phase",
+            "timing_or_service_level",
+            "control_checkpoints"
+          ]
+        },
+        "step_template": {
+          "required_fields": [
+            "step_number",
+            "actor",
+            "action",
+            "system_or_form_used",
+            "expected_output",
+            "evidence_or_record_generated",
+            "timing_or_due_time",
+            "next_step_or_decision"
+          ]
+        },
+        "numbering_pattern": {
+          "phase": "7.x",
+          "step": "7.x.y",
+          "substep_if_needed": "7.x.y.z"
+        },
+        "writing_rules": [
+          "Write explicit user-executable actions",
+          "Each step must identify who performs it",
+          "Each step must state what is done and with what tool or form when relevant",
+          "Each step should produce an output, record, or decision",
+          "Do not write this section like a policy or a standard",
+          "Use decision branches where the next action depends on an outcome",
+          "Include manual fallback handling where automation may fail or be unavailable"
+        ],
+        "recommended_phase_types": [
+          "initiation",
+          "validation",
+          "review",
+          "approval",
+          "execution",
+          "verification",
+          "closure"
+        ]
+      },
+      "8. decision_points_exceptions_and_escalations": {
+        "function": "Operationalize branching logic, exception handling, and escalation paths",
+        "structure": {
+          "decision_tables_or_short_subsections": true
+        },
+        "required_content": [
+          "decision criteria",
+          "exception scenarios",
+          "escalation triggers",
+          "escalation authority",
+          "fallback or alternate path",
+          "documentation requirements for exceptions"
+        ],
+        "writing_rules": [
+          "Make all branches explicit",
+          "Do not leave exception handling implied"
+        ]
+      },
+      "9. outputs_records_evidence_and_forms": {
+        "function": "Define the records, evidence, outputs, and templates generated or used by the procedure",
+        "structure": {
+          "record_and_evidence_tables": true
+        },
+        "recommended_tables": {
+          "outputs": [
+            "Output",
+            "Recipient or Destination"
+          ],
+          "records_and_evidence": [
+            "Record or Evidence",
+            "Owner",
+            "Retention",
+            "Storage Location"
+          ],
+          "forms_and_templates": [
+            "Form or Template",
+            "Purpose",
+            "Reference"
+          ]
+        },
+        "writing_rules": [
+          "Focus on auditability and traceability",
+          "Every critical procedure should leave evidence"
+        ]
+      },
+      "10. time_controls_service_levels_and_control_checkpoints": {
+        "function": "Define when the procedure must be performed and the timing/control expectations around it",
+        "structure": {
+          "timing_table": true
+        },
+        "expected_content": [
+          "step deadlines",
+          "service levels",
+          "review windows",
+          "control checkpoints",
+          "closure timelines"
+        ],
+        "writing_rules": [
+          "Use measurable timings where possible",
+          "Tie timing expectations to step or phase execution"
+        ]
+      },
+      "11. related_documents": {
+        "function": "List parent and supporting governance and execution documents",
+        "structure": {
+          "reference_list_or_table": true
+        },
+        "required_content": [
+          "parent policy",
+          "parent standard",
+          "related procedures",
+          "forms and templates",
+          "supporting control references where applicable"
+        ],
+        "writing_rules": [
+          "List only documents directly relevant to execution"
+        ]
+      },
+      "12. effective_date": {
+        "function": "State when the procedure comes into force",
+        "structure": {
+          "single_sentence": true
+        },
+        "writing_rules": [
+          "Very brief",
+          "Administrative tone"
+        ]
+      },
+      "13. procedure_review": {
+        "function": "Define the review frequency and trigger conditions for updating the procedure",
+        "structure": {
+          "paragraph_count": "1-2"
+        },
+        "required_content": [
+          "planned review cadence",
+          "out-of-cycle review triggers",
+          "requirement to document and approve changes"
+        ],
+        "writing_rules": [
+          "Concise",
+          "Administrative tone"
+        ]
+      },
+      "14. review_and_approval": {
+        "function": "Capture drafting, review, recommendation, and formal approval chain",
+        "structure": {
+          "approval_blocks": true
+        },
+        "required_approval_stages": [
+          "prepared_by",
+          "reviewed_by",
+          "recommended_for_approval",
+          "approved_by"
+        ],
+        "writing_rules": [
+          "Use title and name placeholders or actual names",
+          "Keep stage labels stable across procedures"
+        ]
+      },
+      "15. version_control": {
+        "function": "Track procedure release history",
+        "structure": {
+          "version_control_table": true
+        },
+        "required_columns": [
+          "version_number",
+          "update_type",
+          "update_reason_or_summary",
+          "updated_by",
+          "approval_date"
+        ],
+        "writing_rules": [
+          "One row per approved release",
+          "Do not replace with prose"
+        ]
+      },
+      "optional_appendices": {
+        "function": "Provide supplementary execution aids without cluttering the main body",
+        "allowed_appendices": [
+          "swimlane diagrams",
+          "RACI matrix",
+          "decision trees",
+          "sample completed forms",
+          "checklists",
+          "system screenshots or navigation aids where allowed",
+          "process maps"
+        ],
+        "writing_rules": [
+          "Use appendices only to support execution",
+          "Do not move mandatory steps out of Section 7"
+        ]
+      }
+    },
+    "writing_rules_global": {
+      "subject_entity": "the Ministry",
+      "style": [
+        "formal",
+        "direct",
+        "instructional",
+        "detailed",
+        "government-procedure tone"
+      ],
+      "do": [
+        "write explicit step-by-step actions",
+        "identify the actor for each step",
+        "state timing, evidence, and outputs wherever relevant",
+        "use tables for roles, inputs, tools, records, and timings",
+        "make decision branches explicit",
+        "include escalation and fallback logic",
+        "keep the procedure executable by a practitioner without guesswork"
+      ],
+      "do_not": [
+        "write only policy statements",
+        "write only control requirements without execution detail",
+        "assume the reader knows the next step",
+        "omit who, when, or evidence requirements",
+        "flatten multiple branches into one ambiguous sequence",
+        "leave forms, tools, or records undefined when they are necessary"
+      ]
+    },
+    "statement_depth_rules": {
+      "definitions": {
+        "style": "short operational table entries"
+      },
+      "objective": {
+        "style": "1-2 compact paragraphs"
+      },
+      "scope": {
+        "style": "1-2 compact paragraphs with optional bullets"
+      },
+      "roles_and_responsibilities": {
+        "style": "short but specific role assignments"
+      },
+      "overview_and_inputs": {
+        "style": "tables and concise explanatory prose"
+      },
+      "detailed_procedure_steps": {
+        "style": "explicit executable steps with actor, action, tool, output, evidence, timing, and next step"
+      },
+      "decision_points_and_escalations": {
+        "style": "clear branching logic and escalation criteria"
+      },
+      "records_and_evidence": {
+        "style": "auditable tables"
+      },
+      "review_and_approval": {
+        "style": "structured approval blocks"
+      },
+      "version_control": {
+        "style": "table only"
+      }
+    },
+    "content_balance_rules": {
+      "definitions_share": "5% to 10%",
+      "objective_scope_share": "10% to 15%",
+      "roles_overview_inputs_share": "15% to 20%",
+      "section_7_share": "40% to 60%",
+      "exceptions_records_timings_share": "15% to 25%",
+      "approval_and_version_share": "5% to 10%"
+    },
+    "validation_rules": [
+      "Document must remain recognizably a procedure, not a policy or a standard",
+      "Section 7 must be the dominant section by depth and page count",
+      "Every major phase in Section 7 must identify actor, action, inputs, outputs, evidence, timing, and next step",
+      "Decision points must be explicit",
+      "Triggers, prerequisites, tools, and forms must be defined where relevant",
+      "Roles must be specific and execution-linked",
+      "Exceptions and escalations must be operationalized, not merely stated",
+      "Records and evidence requirements must be present",
+      "Review and approval must be explicitly captured",
+      "Version control table must be present",
+      "Formatting must preserve ministry visual identity",
+      "Classification footer must persist on internal pages"
+    ],
+    "output_contract": {
+      "required_output_parts": [
+        "formatted title and metadata",
+        "full Arabic procedure content",
+        "stable top-level section numbering",
+        "document information block",
+        "definition table",
+        "roles and responsibilities table",
+        "inputs/tools/forms tables",
+        "detailed executable steps",
+        "decision points and escalation logic",
+        "records and evidence table",
+        "time controls and service levels",
+        "review and approval section",
+        "version control table"
+      ],
+      "optional_output_parts": [
+        "swimlane diagram",
+        "RACI matrix",
+        "decision tree appendix",
+        "sample form appendix",
+        "control mapping matrix"
+      ]
+    }
+  }
+}

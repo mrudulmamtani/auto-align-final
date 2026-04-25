@@ -1,0 +1,80 @@
+﻿[
+  {
+    "framework_name": "COSO ERM",
+    "version": "2017",
+    "main_domain_id": "GOV",
+    "main_domain_name": "Governance and Culture",
+    "subdomain_id": "GOV.1",
+    "subdomain_name": "Board risk oversight",
+    "objective": "Risk oversight",
+    "control_id": "GOV-01",
+    "control_statement": "The board provides oversight of the entity's risk management.",
+    "subcontrols": ["Risk appetite approval", "Oversight cadence"],
+    "source_page": "8"
+  },
+  {
+    "framework_name": "COSO ERM",
+    "version": "2017",
+    "main_domain_id": "STR",
+    "main_domain_name": "Strategy and Objective-Setting",
+    "subdomain_id": "STR.2",
+    "subdomain_name": "Risk appetite",
+    "objective": "Align strategy to appetite",
+    "control_id": "STR-02",
+    "control_statement": "Risk appetite is defined and aligned with strategy.",
+    "subcontrols": ["Appetite metrics", "Thresholds"],
+    "source_page": "14"
+  },
+  {
+    "framework_name": "COSO ERM",
+    "version": "2017",
+    "main_domain_id": "PERF",
+    "main_domain_name": "Performance",
+    "subdomain_id": "PERF.4",
+    "subdomain_name": "Risk assessment",
+    "objective": "Assess risk severity",
+    "control_id": "PERF-04",
+    "control_statement": "The organization identifies and assesses risks that may impact strategy and objectives.",
+    "subcontrols": ["Risk inventory", "Impact analysis"],
+    "source_page": "22"
+  },
+  {
+    "framework_name": "COSO ERM",
+    "version": "2017",
+    "main_domain_id": "PERF",
+    "main_domain_name": "Performance",
+    "subdomain_id": "PERF.7",
+    "subdomain_name": "Portfolio view",
+    "objective": "Aggregate exposure",
+    "control_id": "PERF-07",
+    "control_statement": "The organization develops a portfolio view of risk.",
+    "subcontrols": ["Aggregation methods", "Correlation"],
+    "source_page": "26"
+  },
+  {
+    "framework_name": "COSO ERM",
+    "version": "2017",
+    "main_domain_id": "REV",
+    "main_domain_name": "Review and Revision",
+    "subdomain_id": "REV.1",
+    "subdomain_name": "Performance review",
+    "objective": "Evaluate risk performance",
+    "control_id": "REV-01",
+    "control_statement": "Risk management performance is reviewed and improved.",
+    "subcontrols": ["KRI review", "Program updates"],
+    "source_page": "30"
+  },
+  {
+    "framework_name": "COSO ERM",
+    "version": "2017",
+    "main_domain_id": "INF",
+    "main_domain_name": "Information, Communication, and Reporting",
+    "subdomain_id": "INF.2",
+    "subdomain_name": "Reporting",
+    "objective": "Transparent reporting",
+    "control_id": "INF-02",
+    "control_statement": "The organization reports on risk, culture, and performance.",
+    "subcontrols": ["Board reporting", "External reporting"],
+    "source_page": "36"
+  }
+]

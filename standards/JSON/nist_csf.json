@@ -1,0 +1,93 @@
+﻿[
+  {
+    "framework_name": "NIST CSF",
+    "version": "2.0",
+    "main_domain_id": "ID",
+    "main_domain_name": "Identify",
+    "subdomain_id": "ID.GV",
+    "subdomain_name": "Governance",
+    "objective": "Establish cybersecurity governance",
+    "control_id": "ID.GV-01",
+    "control_statement": "Policies, procedures, and processes are established and managed.",
+    "subcontrols": ["Policy lifecycle", "Governance roles"],
+    "source_page": "10"
+  },
+  {
+    "framework_name": "NIST CSF",
+    "version": "2.0",
+    "main_domain_id": "ID",
+    "main_domain_name": "Identify",
+    "subdomain_id": "ID.RA",
+    "subdomain_name": "Risk Assessment",
+    "objective": "Assess cyber risk",
+    "control_id": "ID.RA-01",
+    "control_statement": "Asset vulnerabilities are identified and documented.",
+    "subcontrols": ["Vulnerability inventory", "Risk register"],
+    "source_page": "12"
+  },
+  {
+    "framework_name": "NIST CSF",
+    "version": "2.0",
+    "main_domain_id": "PR",
+    "main_domain_name": "Protect",
+    "subdomain_id": "PR.AA",
+    "subdomain_name": "Identity Management",
+    "objective": "Control access",
+    "control_id": "PR.AA-01",
+    "control_statement": "Identities and credentials are issued, managed, and revoked.",
+    "subcontrols": ["Privileged access", "Access reviews"],
+    "source_page": "18"
+  },
+  {
+    "framework_name": "NIST CSF",
+    "version": "2.0",
+    "main_domain_id": "PR",
+    "main_domain_name": "Protect",
+    "subdomain_id": "PR.PS",
+    "subdomain_name": "Platform Security",
+    "objective": "Secure platforms",
+    "control_id": "PR.PS-01",
+    "control_statement": "Platforms are secured and maintained to meet policy requirements.",
+    "subcontrols": ["Hardening baselines", "Patch SLAs"],
+    "source_page": "20"
+  },
+  {
+    "framework_name": "NIST CSF",
+    "version": "2.0",
+    "main_domain_id": "DE",
+    "main_domain_name": "Detect",
+    "subdomain_id": "DE.CM",
+    "subdomain_name": "Continuous Monitoring",
+    "objective": "Detect anomalies",
+    "control_id": "DE.CM-01",
+    "control_statement": "Networks and systems are monitored to detect anomalous activity.",
+    "subcontrols": ["SIEM coverage", "Alert tuning"],
+    "source_page": "26"
+  },
+  {
+    "framework_name": "NIST CSF",
+    "version": "2.0",
+    "main_domain_id": "RS",
+    "main_domain_name": "Respond",
+    "subdomain_id": "RS.MI",
+    "subdomain_name": "Mitigation",
+    "objective": "Contain incidents",
+    "control_id": "RS.MI-01",
+    "control_statement": "Incidents are contained and mitigated in a timely manner.",
+    "subcontrols": ["Containment playbooks", "Escalation"],
+    "source_page": "30"
+  },
+  {
+    "framework_name": "NIST CSF",
+    "version": "2.0",
+    "main_domain_id": "RC",
+    "main_domain_name": "Recover",
+    "subdomain_id": "RC.IM",
+    "subdomain_name": "Improvements",
+    "objective": "Improve resilience",
+    "control_id": "RC.IM-01",
+    "control_statement": "Recovery plans are improved based on lessons learned.",
+    "subcontrols": ["Post-incident review", "BCP testing"],
+    "source_page": "34"
+  }
+]

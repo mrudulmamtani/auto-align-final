@@ -1,0 +1,35 @@
+version: "3.9"
+services:
+  redis:
+    image: redis:7-alpine
+    ports: ["6380:6379"]
+
+  backend:
+    build: ./backend
+    ports: ["8100:8100"]
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - HF_TOKEN=${HF_TOKEN:-}
+      - SCHEMA_DIR=/app
+    depends_on: [redis]
+    volumes:
+      - ./backend/app:/app/app
+      # Mount artifact dirs so generated files persist across container restarts
+      - ./backend/policy_output:/app/policy_output
+      - ./backend/forensic_maps:/app/forensic_maps
+      - ./backend/org_templates:/app/org_templates
+      - ./backend/converted_output:/app/converted_output
+      - ./backend/docGenConstruct.json:/app/docGenConstruct.json:ro
+      - ./policy.json:/app/policy.json:ro
+      - ./standard.json:/app/standard.json:ro
+      - ./procedure.json:/app/procedure.json:ro
+
+  frontend:
+    build: ./frontend
+    ports: ["3100:3100"]
+    environment:
+      - NEXT_PUBLIC_API_BASE=http://localhost:8100
+      # AutoAlign now merged into the UCCF backend — same port
+      - NEXT_PUBLIC_AUTOALIGN_BASE=http://localhost:8100
+    depends_on: [backend]

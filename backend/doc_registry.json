@@ -1,0 +1,123 @@
+{
+  "POL-07": {
+    "doc_id": "POL-07",
+    "status": "failed",
+    "generated_at": null,
+    "docx_path": null,
+    "pdf_path": null,
+    "qa_passed": null,
+    "elapsed": null,
+    "stale": false,
+    "error": "The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable"
+  },
+  "STD-01": {
+    "doc_id": "STD-01",
+    "status": "generated",
+    "generated_at": "2026-03-14T11:09:23.805156+00:00",
+    "docx_path": "C:\\Users\\offic\\Downloads\\auto-align\\backend\\policy_output\\STD-01.docx",
+    "pdf_path": "C:\\Users\\offic\\Downloads\\auto-align\\backend\\policy_output\\STD-01.pdf",
+    "qa_passed": true,
+    "elapsed": 139.2281265258789,
+    "stale": true
+  },
+  "POL-26": {
+    "doc_id": "POL-26",
+    "status": "generated",
+    "generated_at": "2026-03-14T12:44:06.688024+00:00",
+    "docx_path": "C:\\Users\\offic\\Downloads\\auto-align\\backend\\policy_output\\POL-26.docx",
+    "pdf_path": null,
+    "qa_passed": true,
+    "elapsed": 147.66680359840393,
+    "stale": true
+  },
+  "POL-23": {
+    "doc_id": "POL-23",
+    "status": "generated",
+    "generated_at": "2026-03-14T12:46:01.681109+00:00",
+    "docx_path": "C:\\Users\\offic\\Downloads\\auto-align\\backend\\policy_output\\POL-23.docx",
+    "pdf_path": null,
+    "qa_passed": true,
+    "elapsed": 114.96271824836731,
+    "stale": true
+  },
+  "STD-30": {
+    "doc_id": "STD-30",
+    "status": "generated",
+    "generated_at": "2026-03-14T12:48:11.540038+00:00",
+    "docx_path": "C:\\Users\\offic\\Downloads\\auto-align\\backend\\policy_output\\STD-30.docx",
+    "pdf_path": null,
+    "qa_passed": true,
+    "elapsed": 129.81738829612732,
+    "stale": true
+  },
+  "STD-10": {
+    "doc_id": "STD-10",
+    "status": "generated",
+    "generated_at": "2026-03-14T12:49:53.608916+00:00",
+    "docx_path": "C:\\Users\\offic\\Downloads\\auto-align\\backend\\policy_output\\STD-10.docx",
+    "pdf_path": null,
+    "qa_passed": true,
+    "elapsed": 102.01788258552551,
+    "stale": false
+  },
+  "POL-12": {
+    "doc_id": "POL-12",
+    "status": "generated",
+    "generated_at": "2026-03-14T15:02:36.948636+00:00",
+    "docx_path": "C:\\Users\\offic\\Downloads\\auto-align\\backend\\policy_output\\POL-12.docx",
+    "pdf_path": "C:\\Users\\offic\\Downloads\\auto-align\\backend\\policy_output\\POL-12.pdf",
+    "qa_passed": true,
+    "elapsed": null,
+    "stale": true
+  },
+  "POL-01": {
+    "doc_id": "POL-01",
+    "status": "generated",
+    "generated_at": "2026-03-14T15:02:39.569026+00:00",
+    "docx_path": "C:\\Users\\offic\\Downloads\\auto-align\\backend\\policy_output\\POL-01.docx",
+    "pdf_path": null,
+    "qa_passed": true,
+    "elapsed": null,
+    "stale": false
+  },
+  "POL-24": {
+    "doc_id": "POL-24",
+    "status": "generated",
+    "generated_at": "2026-03-14T16:17:32.363894+00:00",
+    "docx_path": "C:\\Users\\offic\\Downloads\\auto-align\\backend\\policy_output\\POL-24.docx",
+    "pdf_path": "C:\\Users\\offic\\Downloads\\auto-align\\backend\\policy_output\\POL-24.pdf",
+    "qa_passed": true,
+    "elapsed": null,
+    "stale": false
+  },
+  "PRC-24": {
+    "doc_id": "PRC-24",
+    "status": "generated",
+    "generated_at": "2026-03-14T17:20:11.495335+00:00",
+    "docx_path": "C:\\Users\\offic\\Downloads\\auto-align\\backend\\policy_output\\PRC-24.docx",
+    "pdf_path": null,
+    "qa_passed": false,
+    "elapsed": null,
+    "stale": false
+  },
+  "PRC-25": {
+    "doc_id": "PRC-25",
+    "status": "generated",
+    "generated_at": "2026-03-16T04:57:17.308286+00:00",
+    "docx_path": "C:\\Users\\offic\\Downloads\\auto-align\\backend\\policy_output\\PRC-25.docx",
+    "pdf_path": null,
+    "qa_passed": false,
+    "elapsed": null,
+    "stale": false
+  },
+  "PRC-30": {
+    "doc_id": "PRC-30",
+    "status": "generated",
+    "generated_at": "2026-03-15T07:05:34.899002+00:00",
+    "docx_path": "C:\\Users\\offic\\Downloads\\auto-align\\backend\\policy_output\\PRC-30.docx",
+    "pdf_path": null,
+    "qa_passed": false,
+    "elapsed": null,
+    "stale": false
+  }
+}

@@ -1,0 +1,251 @@
+/* AutoAlign Office.js Task Pane — Professional UI */
+
+:root {
+  --navy:      #1F3864;
+  --steel:     #2563EB;
+  --mid-blue:  #2E75B6;
+  --light-bg:  #F0F4FA;
+  --border:    #D1D5DB;
+  --text:      #111827;
+  --text-muted:#6B7280;
+  --white:     #FFFFFF;
+  --success:   #10B981;
+  --warn:      #F59E0B;
+  --error:     #EF4444;
+  --radius:    6px;
+  --shadow:    0 1px 3px rgba(0,0,0,0.12);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Segoe UI", Calibri, Arial, sans-serif;
+  font-size: 13px;
+  color: var(--text);
+  background: #FAFAFA;
+  overflow-x: hidden;
+}
+
+/* ── Header ─────────────────────────────────────────────────────────────── */
+#aa-header {
+  background: var(--navy);
+  color: var(--white);
+  padding: 14px 16px 10px;
+  border-bottom: 3px solid var(--steel);
+}
+#aa-header .aa-brand {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+#aa-header .aa-tagline {
+  font-size: 11px;
+  opacity: 0.75;
+  margin-top: 2px;
+}
+
+/* ── Doc status badge ────────────────────────────────────────────────────── */
+#aa-doc-info {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+}
+.doc-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 12px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+.doc-badge.policy    { background: #DBEAFE; color: #1D4ED8; }
+.doc-badge.standard  { background: #D1FAE5; color: #065F46; }
+.doc-badge.procedure { background: #FEF3C7; color: #92400E; }
+.doc-badge.unknown   { background: #F3F4F6; color: #374151; }
+.doc-title { font-size: 12px; color: var(--text); font-weight: 500; flex: 1; }
+
+/* ── Sections ────────────────────────────────────────────────────────────── */
+.aa-section {
+  border-bottom: 1px solid var(--border);
+  padding: 12px 16px;
+}
+.aa-section-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+/* ── Buttons ─────────────────────────────────────────────────────────────── */
+.aa-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 9px 12px;
+  margin-bottom: 6px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--white);
+  color: var(--text);
+  font-size: 12.5px;
+  font-family: inherit;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s, border-color 0.15s;
+}
+.aa-btn:last-child { margin-bottom: 0; }
+.aa-btn:hover  { background: var(--light-bg); border-color: var(--mid-blue); }
+.aa-btn:active { background: #E0E8F7; }
+.aa-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.aa-btn.primary {
+  background: var(--steel);
+  border-color: #1D4ED8;
+  color: var(--white);
+  font-weight: 600;
+}
+.aa-btn.primary:hover  { background: #1D4ED8; }
+.aa-btn.primary:active { background: #1E40AF; }
+
+.aa-btn .btn-icon { font-size: 16px; flex-shrink: 0; }
+.aa-btn .btn-label { flex: 1; }
+.aa-btn .btn-desc  { font-size: 10.5px; color: var(--text-muted); margin-top: 1px; }
+.aa-btn.primary .btn-desc { color: rgba(255,255,255,0.7); }
+.btn-content { display: flex; flex-direction: column; }
+
+/* ── Status log ──────────────────────────────────────────────────────────── */
+#aa-log {
+  background: var(--white);
+  padding: 10px 16px;
+  flex: 1;
+  overflow-y: auto;
+  min-height: 80px;
+  max-height: 220px;
+}
+.log-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 11.5px;
+  padding: 3px 0;
+  border-bottom: 1px solid #F3F4F6;
+  line-height: 1.4;
+}
+.log-entry:last-child { border-bottom: none; }
+.log-icon { flex-shrink: 0; }
+.log-text { flex: 1; color: var(--text); }
+.log-entry.ok   .log-icon { color: var(--success); }
+.log-entry.warn .log-icon { color: var(--warn); }
+.log-entry.err  .log-icon { color: var(--error); }
+.log-entry.info .log-icon { color: var(--mid-blue); }
+
+/* ── Progress bar ────────────────────────────────────────────────────────── */
+#aa-progress-wrap {
+  padding: 0 16px 12px;
+  display: none;
+}
+#aa-progress-wrap.visible { display: block; }
+#aa-progress-bar {
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+#aa-progress-fill {
+  height: 100%;
+  background: var(--steel);
+  border-radius: 2px;
+  transition: width 0.3s;
+  width: 0%;
+}
+#aa-progress-label {
+  font-size: 10.5px;
+  color: var(--text-muted);
+  margin-top: 4px;
+  text-align: right;
+}
+
+/* ── Settings panel ──────────────────────────────────────────────────────── */
+#aa-settings { display: none; }
+#aa-settings.visible { display: block; }
+.aa-input-row { margin-bottom: 8px; }
+.aa-label { font-size: 11px; color: var(--text-muted); margin-bottom: 3px; display: block; }
+.aa-input {
+  width: 100%;
+  padding: 7px 9px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 12px;
+  font-family: inherit;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.15s;
+}
+.aa-input:focus { border-color: var(--steel); }
+
+/* ── Footer ──────────────────────────────────────────────────────────────── */
+#aa-footer {
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10.5px;
+  color: var(--text-muted);
+}
+.aa-footer-link {
+  color: var(--mid-blue);
+  cursor: pointer;
+  text-decoration: none;
+}
+.aa-footer-link:hover { text-decoration: underline; }
+
+/* ── Spinner ─────────────────────────────────────────────────────────────── */
+.aa-spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--border);
+  border-top-color: var(--steel);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  vertical-align: middle;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+#aa-global-spinner {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background: rgba(255,255,255,0.9);
+  padding: 20px 28px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-muted);
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+#aa-global-spinner.visible {
+  display: flex;
+}

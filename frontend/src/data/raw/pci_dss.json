@@ -1,0 +1,67 @@
+﻿[
+  {
+    "framework_name": "PCI DSS",
+    "version": "4.0",
+    "main_domain_id": "1",
+    "main_domain_name": "Network Security",
+    "subdomain_id": "1.2",
+    "subdomain_name": "Configuration standards",
+    "objective": "Secure network configuration",
+    "control_id": "1.2.1",
+    "control_statement": "Network security controls are configured and maintained.",
+    "subcontrols": ["Firewall rules", "Router standards"],
+    "source_page": "11"
+  },
+  {
+    "framework_name": "PCI DSS",
+    "version": "4.0",
+    "main_domain_id": "3",
+    "main_domain_name": "Protect Account Data",
+    "subdomain_id": "3.5",
+    "subdomain_name": "Key management",
+    "objective": "Protect cryptographic keys",
+    "control_id": "3.5.1",
+    "control_statement": "Cryptographic keys are protected against disclosure and misuse.",
+    "subcontrols": ["Key rotation", "Key storage"],
+    "source_page": "20"
+  },
+  {
+    "framework_name": "PCI DSS",
+    "version": "4.0",
+    "main_domain_id": "6",
+    "main_domain_name": "Secure Systems",
+    "subdomain_id": "6.3",
+    "subdomain_name": "Vulnerability management",
+    "objective": "Manage vulnerabilities",
+    "control_id": "6.3.1",
+    "control_statement": "Security vulnerabilities are identified and addressed.",
+    "subcontrols": ["Patch management", "Vulnerability scanning"],
+    "source_page": "28"
+  },
+  {
+    "framework_name": "PCI DSS",
+    "version": "4.0",
+    "main_domain_id": "10",
+    "main_domain_name": "Log and Monitor",
+    "subdomain_id": "10.2",
+    "subdomain_name": "Audit logs",
+    "objective": "Monitor access",
+    "control_id": "10.2.1",
+    "control_statement": "Audit logs are implemented for all system components.",
+    "subcontrols": ["Log retention", "Log review"],
+    "source_page": "44"
+  },
+  {
+    "framework_name": "PCI DSS",
+    "version": "4.0",
+    "main_domain_id": "12",
+    "main_domain_name": "Support Information Security",
+    "subdomain_id": "12.6",
+    "subdomain_name": "Security awareness",
+    "objective": "Maintain awareness",
+    "control_id": "12.6.1",
+    "control_statement": "Security awareness program is implemented and maintained.",
+    "subcontrols": ["Annual training", "Phishing simulations"],
+    "source_page": "52"
+  }
+]

@@ -1,0 +1,449 @@
+{
+  "policy_document_schema": {
+    "document_type": "Policy",
+    "document_family": "ClientX Ministerial Cybersecurity Policy",
+    "family_type": "Governance Policy",
+    "language_mode": "English regulatory or technical glosses",
+    "purpose_of_family": "Produce ministry-grade cybersecurity policies that establish governing requirements, are concise and enforceable, visually consistent, and structurally aligned to ClientX policy model.",
+    "audience": [
+      "all ministry personnel",
+      "contractors",
+      "service providers",
+      "consultants",
+      "control owners",
+      "implementing departments",
+      "review and audit stakeholders"
+    ],
+    "page_model": {
+      "target_page_count": {
+        "min": 6,
+        "typical": 7,
+        "max": 10
+      },
+      "page_allocation": {
+        "cover_page": 1,
+        "table_of_contents": 1,
+        "document_information": 1,
+        "definitions_objective_scope": 1,
+        "policy_statement": "1-2",
+        "roles_related_effective_review": 1,
+        "approval_and_version_control": 1,
+        "control_mapping_matrix": "0-1"
+      }
+    },
+    "visual_system": {
+      "rtl": true,
+      "branding": {
+        "include_ministry_logo_top_right": true,
+        "include_Client_Slogan_top_left": true
+      },
+      "cover_page": {
+        "style": "full-page branded cover",
+        "background": "dark green ministry gradient",
+        "title_position": "center-lower third",
+        "metadata_position": "bottom-right",
+        "required_fields": [
+          "policy_title_ar",
+          "version_number",
+          "issue_date",
+          "classification"
+        ]
+      },
+      "internal_pages": {
+        "header": {
+          "show_reference_version_issue_date": true,
+          "show_logos": false
+        },
+        "footer": {
+          "show_page_number": true,
+          "show_classification_bilingual": true
+        },
+        "watermark": {
+          "enabled": true,
+          "text": "Draft",
+          "style": "large diagonal light gray"
+        }
+      },
+      "accent_colors": {
+        "primary_dark_green": "#0F4D43",
+        "secondary_green": "#2E7D6B",
+        "neutral_light": "#F4F4F4",
+        "border_gray": "#D9D9D9"
+      },
+      "tables": {
+        "header_fill": "primary_dark_green",
+        "header_text_color": "white",
+        "body_fill": "white",
+        "border_style": "thin gray grid"
+      },
+      "typography": {
+        "title_weight": "bold",
+        "section_heading_weight": "bold",
+        "body_style": "formal Arabic policy prose",
+        "technical_gloss_style": "Arabic term followed by English in parentheses when needed"
+      }
+    },
+    "document_order": [
+      "cover",
+      "table_of_contents",
+      "document_information",
+      "1. definitions",
+      "2. policy_objective",
+      "3. policy_scope",
+      "4. policy_statement",
+      "5. roles_and_responsibilities",
+      "6. related_documents",
+      "7. effective_date",
+      "8. policy_review",
+      "9. review_and_approval",
+      "10. version_control",
+      "optional_control_mapping_matrix"
+    ],
+    "section_blueprints": {
+      "cover": {
+        "required_elements": [
+          "policy_title_ar",
+          "optional_policy_title_en_if_used",
+          "version_number",
+          "issue_date",
+          "classification"
+        ],
+        "writing_rules": [
+          "No body prose on cover",
+          "Minimal metadata only",
+          "Title must dominate the page"
+        ]
+      },
+      "table_of_contents": {
+        "required_elements": [
+          "fixed top-level section list",
+          "page numbers"
+        ],
+        "writing_rules": [
+          "Use only top-level sections",
+          "Keep the structure stable across policy documents"
+        ]
+      },
+      "document_information": {
+        "required_fields": {
+          "policy_owner": true,
+          "version_number": true,
+          "issue_date": true,
+          "reference_number": true
+        },
+        "writing_rules": [
+          "Use a compact metadata table",
+          "Do not replace metadata with narrative prose"
+        ]
+      },
+      "1. definitions": {
+        "function": "Define core administrative and policy terms used in the document",
+        "structure": {
+          "definition_table": true
+        },
+        "table_columns": [
+          "Term",
+          "Definition"
+        ],
+        "expected_length": {
+          "terms_min": 4,
+          "terms_max": 10
+        },
+        "required_terms_pattern": [
+          "the Ministry",
+          "the Minister",
+          "ministry personnel",
+          "the policy"
+        ],
+        "writing_rules": [
+          "Keep definitions short and administrative",
+          "Only define technical terms if they are directly needed in the policy body",
+          "Prefer one-line definitions"
+        ]
+      },
+      "2. policy_objective": {
+        "function": "State what the policy governs and why it exists",
+        "structure": {
+          "paragraph_count": "1-2"
+        },
+        "expected_content": [
+          "policy subject area",
+          "alignment to national cybersecurity requirements",
+          "risk reduction intent",
+          "reference to confidentiality, integrity, and availability where relevant"
+        ],
+        "writing_rules": [
+          "Concise formal prose",
+          "No bullets",
+          "No operational detail here"
+        ]
+      },
+      "3. policy_scope": {
+        "function": "Define who and what the policy applies to",
+        "structure": {
+          "paragraph_count": "1-2"
+        },
+        "expected_content": [
+          "covered people",
+          "covered systems",
+          "covered assets",
+          "covered technical environments where relevant"
+        ],
+        "writing_rules": [
+          "Very concise",
+          "Applicability only",
+          "No control statements here"
+        ]
+      },
+      "4. policy_statement": {
+        "function": "Carry the governing requirements of the policy",
+        "dominance_rule": "This must be the longest and most substantive section in the document",
+        "required_opening_label": "General Provisions",
+        "clause_model": {
+          "clause_style": "flat sequence of imperative policy statements",
+          "expected_clause_count": {
+            "min": 7,
+            "typical": 12,
+            "max": 25
+          },
+          "sentence_style": "short to medium mandatory statements",
+          "verbs": {
+            "mandatory": [
+              "must",
+              "must not"
+            ],
+            "conditional": [
+              "when needed",
+              "before",
+              "upon",
+              "at least"
+            ]
+          },
+          "allowed_clause_features": [
+            "review frequency",
+            "retention period",
+            "classification-based requirement",
+            "technology or control expectation",
+            "environment-specific applicability",
+            "sub-bullets for multiple sub-requirements"
+          ],
+          "typical_clause_length": "1-3 sentences",
+          "sub_bullets_allowed": true,
+          "sub_bullets_use_cases": [
+            "review frequencies",
+            "multiple related control conditions",
+            "lists of required protective measures"
+          ]
+        },
+        "content_rules": [
+          "Policy clauses must remain high-level but enforceable",
+          "Do not turn the section into procedures or workflows",
+          "Each clause should express one governing requirement or one tightly related bundle of requirements",
+          "Clauses may differentiate by data classification, system type, service model, or operational context where needed"
+        ]
+      },
+      "5. roles_and_responsibilities": {
+        "function": "Assign ownership for review and implementation",
+        "structure": {
+          "concise_lines_or_short_list": true
+        },
+        "expected_content": [
+          "review and update owner",
+          "implementing departments or functions"
+        ],
+        "writing_rules": [
+          "Keep short",
+          "Do not over-specify operational duties",
+          "Use department-level accountability"
+        ]
+      },
+      "6. related_documents": {
+        "function": "List applicable reference controls, standards, and related policy sources",
+        "structure": {
+          "reference_list_or_table": true
+        },
+        "expected_content": [
+          "national frameworks",
+          "relevant domain control sets",
+          "policy-relevant supporting references"
+        ],
+        "writing_rules": [
+          "List only relevant references",
+          "Prefer official framework titles and versions"
+        ]
+      },
+      "7. effective_date": {
+        "function": "State when the policy comes into force",
+        "structure": {
+          "single_sentence": true
+        },
+        "writing_rules": [
+          "Very brief",
+          "Administrative and authoritative tone"
+        ]
+      },
+      "8. policy_review": {
+        "function": "Define the review frequency and trigger conditions for updating the policy",
+        "structure": {
+          "paragraph_count": "1-2"
+        },
+        "required_content": [
+          "planned review cadence",
+          "out-of-cycle review triggers",
+          "requirement to document and approve changes",
+          "periodic review of implementation where applicable"
+        ],
+        "writing_rules": [
+          "Concise",
+          "Administrative tone"
+        ]
+      },
+      "9. review_and_approval": {
+        "function": "Capture drafting, review, recommendation, and formal approval chain",
+        "structure": {
+          "approval_blocks": true
+        },
+        "required_approval_stages": [
+          "prepared_by",
+          "reviewed_by",
+          "recommended_for_approval",
+          "approved_by"
+        ],
+        "writing_rules": [
+          "Use title and name placeholders or actual names",
+          "Keep stage labels stable across policies"
+        ]
+      },
+      "10. version_control": {
+        "function": "Track policy release history",
+        "structure": {
+          "version_control_table": true
+        },
+        "required_columns": [
+          "version_number",
+          "update_type",
+          "update_reason_or_summary",
+          "updated_by",
+          "approval_date"
+        ],
+        "writing_rules": [
+          "One row per approved release",
+          "Do not replace with prose"
+        ]
+      },
+      "optional_control_mapping_matrix": {
+        "function": "Map policy clauses to applicable control frameworks",
+        "structure": {
+          "matrix_table": true
+        },
+        "required_columns_pattern": [
+          "clause",
+          "framework_1",
+          "framework_2",
+          "framework_3"
+        ],
+        "optional_framework_columns": [
+          "ECC",
+          "CSCC",
+          "CCC",
+          "OSMACC",
+          "TCC",
+          "DCC",
+          "other_applicable_frameworks"
+        ],
+        "writing_rules": [
+          "Map each substantive policy clause to the relevant framework controls",
+          "Keep the matrix aligned with clause numbering used in the policy statement section"
+        ]
+      }
+    },
+    "writing_rules_global": {
+      "subject_entity": "the Ministry",
+      "style": [
+        "formal",
+        "direct",
+        "authoritative",
+        "concise",
+        "government-policy tone"
+      ],
+      "do": [
+        "write mandatory policy statements",
+        "keep definitions, objective, and scope short",
+        "make Section 4 the dominant content section",
+        "use concise administrative language in closing sections",
+        "include framework references and approval mechanics"
+      ],
+      "do_not": [
+        "write deep operational procedures",
+        "write like a standard or implementation guide",
+        "over-explain concepts",
+        "use marketing language",
+        "leave approval and version-control mechanics out",
+        "flatten related documents and mappings into unstructured prose"
+      ]
+    },
+    "statement_depth_rules": {
+      "definitions": {
+        "style": "very short table entries"
+      },
+      "objective": {
+        "style": "1-2 compact paragraphs"
+      },
+      "scope": {
+        "style": "1-2 compact paragraphs"
+      },
+      "policy_statement_clauses": {
+        "style": "short enforceable policy clauses, sometimes with sub-bullets"
+      },
+      "roles_and_responsibilities": {
+        "style": "brief assignment lines"
+      },
+      "effective_date": {
+        "style": "single sentence"
+      },
+      "review_and_approval": {
+        "style": "structured approval blocks"
+      },
+      "version_control": {
+        "style": "table only"
+      }
+    },
+    "content_balance_rules": {
+      "definitions_share": "5% to 10%",
+      "objective_scope_share": "10% to 15%",
+      "section_4_share": "40% to 55%",
+      "roles_related_review_share": "10% to 15%",
+      "approval_version_mapping_share": "15% to 25%"
+    },
+    "validation_rules": [
+      "Document must remain recognizably a policy, not a standard or procedure",
+      "Section 4 must be the dominant section by depth",
+      "Definitions must be in a table",
+      "Objective and scope must remain concise",
+      "Roles and responsibilities must be brief and department-oriented",
+      "Effective date must be a standalone section",
+      "Review and approval must be explicitly captured",
+      "Version control table must be present",
+      "Control mapping matrix should be present when clause-to-framework traceability is required",
+      "Formatting must preserve ministry visual identity",
+      "Classification footer must persist on internal pages"
+    ],
+    "output_contract": {
+      "required_output_parts": [
+        "formatted title and metadata",
+        "full Arabic policy content",
+        "stable top-level section numbering",
+        "document information block",
+        "definition table",
+        "policy statement section",
+        "review and approval section",
+        "version control table"
+      ],
+      "optional_output_parts": [
+        "control mapping matrix",
+        "bilingual cover elements",
+        "named approver blocks"
+      ]
+    }
+  }
+}

@@ -1,0 +1,1016 @@
+{
+  "version": "1.0",
+  "notes": [
+    "IDs are stable keys for orchestration. Do not change once adopted.",
+    "Wave order is the generation order. Within a wave, generate in listed order.",
+    "Dependencies are intentionally minimal (pragmatic) to avoid circularity while still enforcing consistency."
+  ],
+  "generation_order": {
+    "wave_1_policies_foundation": [
+      "POL-01",
+      "POL-12",
+      "POL-08",
+      "POL-34",
+      "POL-17",
+      "POL-09",
+      "POL-06",
+      "POL-07",
+      "POL-14",
+      "POL-19",
+      "POL-16",
+      "POL-33"
+    ],
+    "wave_2_core_standards": [
+      "STD-15",
+      "STD-26",
+      "STD-02",
+      "STD-03",
+      "STD-11",
+      "STD-09",
+      "STD-13",
+      "STD-04",
+      "STD-08",
+      "STD-22",
+      "STD-14",
+      "STD-16",
+      "STD-29",
+      "STD-05",
+      "STD-07",
+      "STD-06",
+      "STD-12",
+      "STD-23",
+      "STD-31",
+      "STD-32"
+    ],
+    "wave_3_high_impact_procedures": [
+      "PRC-01",
+      "PRC-02",
+      "PRC-03",
+      "PRC-04",
+      "PRC-05",
+      "PRC-30",
+      "PRC-25",
+      "PRC-26",
+      "PRC-27",
+      "PRC-22",
+      "PRC-09",
+      "PRC-33",
+      "PRC-31",
+      "PRC-43",
+      "PRC-44",
+      "PRC-32",
+      "PRC-10",
+      "PRC-40",
+      "PRC-15",
+      "PRC-21",
+      "PRC-23",
+      "PRC-24"
+    ],
+    "wave_4_remaining_policies": [
+      "POL-10",
+      "POL-11",
+      "POL-13",
+      "POL-15",
+      "POL-18",
+      "POL-20",
+      "POL-21",
+      "POL-22",
+      "POL-23",
+      "POL-24",
+      "POL-25",
+      "POL-26",
+      "POL-27",
+      "POL-28",
+      "POL-29",
+      "POL-30",
+      "POL-31",
+      "POL-32",
+      "POL-05",
+      "POL-04",
+      "POL-02",
+      "POL-03"
+    ],
+    "wave_5_remaining_standards": [
+      "STD-01",
+      "STD-17",
+      "STD-18",
+      "STD-19",
+      "STD-20",
+      "STD-10",
+      "STD-30",
+      "STD-21",
+      "STD-24",
+      "STD-25",
+      "STD-27",
+      "STD-28"
+    ],
+    "wave_6_remaining_procedures": [
+      "PRC-06",
+      "PRC-16",
+      "PRC-17",
+      "PRC-07",
+      "PRC-08",
+      "PRC-11",
+      "PRC-12",
+      "PRC-13",
+      "PRC-14",
+      "PRC-28",
+      "PRC-29",
+      "PRC-19",
+      "PRC-20",
+      "PRC-35",
+      "PRC-36",
+      "PRC-37",
+      "PRC-38",
+      "PRC-39",
+      "PRC-18",
+      "PRC-34",
+      "PRC-41",
+      "PRC-42"
+    ]
+  },
+  "documents": [
+    {
+      "id": "POL-01",
+      "type": "policy",
+      "name_en": "Cybersecurity Governance Policy",
+      "name_ar": "السياسة العامة للأمن السيبراني",
+      "wave": 1,
+      "depends_on": []
+    },
+    {
+      "id": "POL-02",
+      "type": "policy",
+      "name_en": "Penetration Testing Policy",
+      "name_ar": "سياسة اختبار الاختراق",
+      "wave": 4,
+      "depends_on": ["POL-01", "POL-34", "POL-08"]
+    },
+    {
+      "id": "POL-03",
+      "type": "policy",
+      "name_en": "Vulnerability Management Policy",
+      "name_ar": "سياسة إدارة الثغرات",
+      "wave": 4,
+      "depends_on": ["POL-01", "POL-34", "POL-08"]
+    },
+    {
+      "id": "POL-04",
+      "type": "policy",
+      "name_en": "Backup Management Policy",
+      "name_ar": "سياسة إدارة النسخ الاحتياطية",
+      "wave": 4,
+      "depends_on": ["POL-19", "POL-16", "POL-17"]
+    },
+    {
+      "id": "POL-05",
+      "type": "policy",
+      "name_en": "Patch and Update Management Policy",
+      "name_ar": "سياسة إدارة حزم التحديثات والإصلاحات",
+      "wave": 4,
+      "depends_on": ["POL-01", "POL-34"]
+    },
+    {
+      "id": "POL-06",
+      "type": "policy",
+      "name_en": "Incident and Threat Management Policy",
+      "name_ar": "سياسة إدارة حوادث وتهديدات الأمن السيبراني",
+      "wave": 1,
+      "depends_on": ["POL-01", "POL-12"]
+    },
+    {
+      "id": "POL-07",
+      "type": "policy",
+      "name_en": "Security Logging and Monitoring Policy",
+      "name_ar": "سياسة إدارة سجلات الأحداث ومراقبة الأمن السيبراني",
+      "wave": 1,
+      "depends_on": ["POL-01", "POL-12"]
+    },
+    {
+      "id": "POL-08",
+      "type": "policy",
+      "name_en": "Cybersecurity Risk Management Policy",
+      "name_ar": "سياسة إدارة مخاطر الأمن السيبراني",
+      "wave": 1,
+      "depends_on": ["POL-01"]
+    },
+    {
+      "id": "POL-09",
+      "type": "policy",
+      "name_en": "Identity and Access Management Policy",
+      "name_ar": "سياسة إدارة هويات الدخول والصلاحيات",
+      "wave": 1,
+      "depends_on": ["POL-01", "POL-12"]
+    },
+    {
+      "id": "POL-10",
+      "type": "policy",
+      "name_en": "Acceptable Use Policy",
+      "name_ar": "سياسة الاستخدام المقبول للأصول",
+      "wave": 4,
+      "depends_on": ["POL-01", "POL-13"]
+    },
+    {
+      "id": "POL-11",
+      "type": "policy",
+      "name_en": "Secure Configuration and Hardening Policy",
+      "name_ar": "سياسة الإعدادات والتحصين",
+      "wave": 4,
+      "depends_on": ["POL-01", "POL-31"]
+    },
+    {
+      "id": "POL-12",
+      "type": "policy",
+      "name_en": "Cybersecurity Regulatory Compliance Policy",
+      "name_ar": "سياسة الالتزام بتشريعات وتنظيمات الأمن السيبراني",
+      "wave": 1,
+      "depends_on": ["POL-01"]
+    },
+    {
+      "id": "POL-13",
+      "type": "policy",
+      "name_en": "Information Asset Security Policy",
+      "name_ar": "سياسة الأمن السيبراني المتعلق بإدارة الأصول المعلوماتية",
+      "wave": 4,
+      "depends_on": ["POL-01", "POL-17"]
+    },
+    {
+      "id": "POL-14",
+      "type": "policy",
+      "name_en": "Third-Party Cybersecurity Policy",
+      "name_ar": "سياسة الأمن السيبراني المتعلق بالأطراف الخارجية",
+      "wave": 1,
+      "depends_on": ["POL-01", "POL-12", "POL-08"]
+    },
+    {
+      "id": "POL-15",
+      "type": "policy",
+      "name_en": "Physical Security Policy",
+      "name_ar": "سياسة الأمن السيبراني المتعلق بالأمن المادي",
+      "wave": 4,
+      "depends_on": ["POL-01", "POL-12"]
+    },
+    {
+      "id": "POL-16",
+      "type": "policy",
+      "name_en": "Cloud and Hosting Security Policy",
+      "name_ar": "سياسة الأمن السيبراني المتعلق بالحوسبة السحابية والاستضافة",
+      "wave": 1,
+      "depends_on": ["POL-01", "POL-12", "POL-17"]
+    },
+    {
+      "id": "POL-17",
+      "type": "policy",
+      "name_en": "Data Protection and Information Security Policy",
+      "name_ar": "سياسة الأمن السيبراني المتعلق بحماية البيانات والمعلومات",
+      "wave": 1,
+      "depends_on": ["POL-01", "POL-12"]
+    },
+    {
+      "id": "POL-18",
+      "type": "policy",
+      "name_en": "Security in IT Projects Policy",
+      "name_ar": "سياسة الأمن السيبراني ضمن إدارة المشاريع المعلوماتية والتقنية",
+      "wave": 4,
+      "depends_on": ["POL-01", "POL-33"]
+    },
+    {
+      "id": "POL-19",
+      "type": "policy",
+      "name_en": "Business Continuity Cybersecurity Policy",
+      "name_ar": "سياسة الأمن السيبراني ضمن استمرارية الأعمال",
+      "wave": 1,
+      "depends_on": ["POL-01", "POL-12", "POL-08"]
+    },
+    {
+      "id": "POL-20",
+      "type": "policy",
+      "name_en": "Social Media Security Policy",
+      "name_ar": "سياسة الأمن السيبراني لحسابات التواصل الاجتماعي",
+      "wave": 4,
+      "depends_on": ["POL-01", "POL-12"]
+    },
+    {
+      "id": "POL-21",
+      "type": "policy",
+      "name_en": "Human Resources Cybersecurity Policy",
+      "name_ar": "سياسة الأمن السيبراني للموارد البشرية",
+      "wave": 4,
+      "depends_on": ["POL-01", "POL-12"]
+    },
+    {
+      "id": "POL-22",
+      "type": "policy",
+      "name_en": "Cryptography Policy",
+      "name_ar": "سياسة التشفير",
+      "wave": 4,
+      "depends_on": ["POL-17", "POL-12"]
+    },
+    {
+      "id": "POL-23",
+      "type": "policy",
+      "name_en": "Malware Protection Policy",
+      "name_ar": "سياسة الحماية من البرمجيات الضارة",
+      "wave": 4,
+      "depends_on": ["POL-01", "POL-12"]
+    },
+    {
+      "id": "POL-24",
+      "type": "policy",
+      "name_en": "Remote Access Policy",
+      "name_ar": "سياسة الوصول عن بعد",
+      "wave": 4,
+      "depends_on": ["POL-09", "POL-16", "POL-12"]
+    },
+    {
+      "id": "POL-25",
+      "type": "policy",
+      "name_en": "Endpoint and Mobile Device Security Policy",
+      "name_ar": "سياسة أمن أجهزة المستخدمين المحمولة والشخصية",
+      "wave": 4,
+      "depends_on": ["POL-01", "POL-12", "POL-10"]
+    },
+    {
+      "id": "POL-26",
+      "type": "policy",
+      "name_en": "Email Security Policy",
+      "name_ar": "سياسة أمن البريد الإلكتروني",
+      "wave": 4,
+      "depends_on": ["POL-01", "POL-12"]
+    },
+    {
+      "id": "POL-27",
+      "type": "policy",
+      "name_en": "Server Security Policy",
+      "name_ar": "سياسة أمن الخوادم",
+      "wave": 4,
+      "depends_on": ["POL-01", "POL-11"]
+    },
+    {
+      "id": "POL-28",
+      "type": "policy",
+      "name_en": "Network Security Policy",
+      "name_ar": "سياسة أمن الشبكات",
+      "wave": 4,
+      "depends_on": ["POL-01", "POL-12", "POL-24"]
+    },
+    {
+      "id": "POL-29",
+      "type": "policy",
+      "name_en": "Database Security Policy",
+      "name_ar": "سياسة أمن قواعد البيانات",
+      "wave": 4,
+      "depends_on": ["POL-01", "POL-17", "POL-22"]
+    },
+    {
+      "id": "POL-30",
+      "type": "policy",
+      "name_en": "Storage Media Security Policy",
+      "name_ar": "سياسة أمن وسائط التخزين",
+      "wave": 4,
+      "depends_on": ["POL-17", "POL-12"]
+    },
+    {
+      "id": "POL-31",
+      "type": "policy",
+      "name_en": "Systems and Processing Environment Security Policy",
+      "name_ar": "سياسة حماية الأنظمة وأجهزة معالجة المعلومات",
+      "wave": 4,
+      "depends_on": ["POL-01", "POL-11", "POL-17"]
+    },
+    {
+      "id": "POL-32",
+      "type": "policy",
+      "name_en": "Application Security Policy",
+      "name_ar": "سياسة حماية التطبيقات",
+      "wave": 4,
+      "depends_on": ["POL-01", "POL-33"]
+    },
+    {
+      "id": "POL-33",
+      "type": "policy",
+      "name_en": "Secure Software Development Lifecycle Policy",
+      "name_ar": "سياسة دورة حياة تطوير البرمجيات الآمنة",
+      "wave": 1,
+      "depends_on": ["POL-01", "POL-12"]
+    },
+    {
+      "id": "POL-34",
+      "type": "policy",
+      "name_en": "Cybersecurity Audit and Review Policy",
+      "name_ar": "سياسة مراجعة وتدقيق الأمن السيبراني",
+      "wave": 1,
+      "depends_on": ["POL-01", "POL-12"]
+    },
+
+    {
+      "id": "STD-01",
+      "type": "standard",
+      "name_en": "Artificial Intelligence Security Standard",
+      "name_ar": "معيار أمن الذكاء الاصطناعي",
+      "wave": 5,
+      "depends_on": ["POL-01", "POL-12"]
+    },
+    {
+      "id": "STD-02",
+      "type": "standard",
+      "name_en": "Cybersecurity Incident and Threat Management Standard",
+      "name_ar": "معيار إدارة حوادث وتهديدات الأمن السيبراني",
+      "wave": 2,
+      "depends_on": ["POL-06", "POL-12"]
+    },
+    {
+      "id": "STD-03",
+      "type": "standard",
+      "name_en": "Security Logging and Monitoring Standard",
+      "name_ar": "معيار إدارة سجلات الأحداث ومراقبة الأمن السيبراني",
+      "wave": 2,
+      "depends_on": ["POL-07", "POL-12"]
+    },
+    {
+      "id": "STD-04",
+      "type": "standard",
+      "name_en": "Asset Management Standard",
+      "name_ar": "معيار إدارة الأصول",
+      "wave": 2,
+      "depends_on": ["POL-13", "POL-17"]
+    },
+    {
+      "id": "STD-05",
+      "type": "standard",
+      "name_en": "Endpoint and Mobile Device Security Standard",
+      "name_ar": "معيار أمن أجهزة المستخدمين والأجهزة المحمولة",
+      "wave": 2,
+      "depends_on": ["POL-25", "POL-10"]
+    },
+    {
+      "id": "STD-06",
+      "type": "standard",
+      "name_en": "Server Security Standard",
+      "name_ar": "معيار أمن الخوادم",
+      "wave": 2,
+      "depends_on": ["POL-27", "POL-11"]
+    },
+    {
+      "id": "STD-07",
+      "type": "standard",
+      "name_en": "Network and Wireless Security Standard",
+      "name_ar": "معيار أمن الشبكات اللاسلكية + الشبكات",
+      "wave": 2,
+      "depends_on": ["POL-28", "POL-24"]
+    },
+    {
+      "id": "STD-08",
+      "type": "standard",
+      "name_en": "Secure Configuration and Hardening Standard",
+      "name_ar": "معيار الإعدادات والتحصين الأمني",
+      "wave": 2,
+      "depends_on": ["POL-11", "POL-31"]
+    },
+    {
+      "id": "STD-09",
+      "type": "standard",
+      "name_en": "Data Security Standard",
+      "name_ar": "معيار الأمن السيبراني للبيانات",
+      "wave": 2,
+      "depends_on": ["POL-17", "POL-12"]
+    },
+    {
+      "id": "STD-10",
+      "type": "standard",
+      "name_en": "Malware Protection Standard",
+      "name_ar": "معيار الحماية من البرمجيات الضارة",
+      "wave": 5,
+      "depends_on": ["POL-23", "POL-26"]
+    },
+    {
+      "id": "STD-11",
+      "type": "standard",
+      "name_en": "Network Detection and Response Standard",
+      "name_ar": "معيار الكشف عن تهديدات الشبكات والاستجابة لها (NDR+EDR)",
+      "wave": 2,
+      "depends_on": ["POL-06", "POL-07"]
+    },
+    {
+      "id": "STD-12",
+      "type": "standard",
+      "name_en": "Database Security Standard",
+      "name_ar": "معيار أمن قواعد البيانات",
+      "wave": 2,
+      "depends_on": ["POL-29", "POL-17"]
+    },
+    {
+      "id": "STD-13",
+      "type": "standard",
+      "name_en": "Cryptography and Encryption Standard",
+      "name_ar": "معيار التشفير",
+      "wave": 2,
+      "depends_on": ["POL-22", "POL-17"]
+    },
+    {
+      "id": "STD-14",
+      "type": "standard",
+      "name_en": "Third-Party Security Standard",
+      "name_ar": "معيار الأطراف الخارجية",
+      "wave": 2,
+      "depends_on": ["POL-14", "POL-12"]
+    },
+    {
+      "id": "STD-15",
+      "type": "standard",
+      "name_en": "Cybersecurity Risk Management Standard",
+      "name_ar": "معيار إدارة المخاطر",
+      "wave": 2,
+      "depends_on": ["POL-08", "POL-12"]
+    },
+    {
+      "id": "STD-16",
+      "type": "standard",
+      "name_en": "Business Continuity and Disaster Recovery Standard (BCP/DR)",
+      "name_ar": "معيار استمرارية الأعمال والتعافي من الكوارث (BCP/DR)",
+      "wave": 2,
+      "depends_on": ["POL-19", "POL-12"]
+    },
+    {
+      "id": "STD-17",
+      "type": "standard",
+      "name_en": "Development Environment Security Standard",
+      "name_ar": "معايير البيئة التطويرية DEV",
+      "wave": 5,
+      "depends_on": ["POL-33", "POL-18"]
+    },
+    {
+      "id": "STD-18",
+      "type": "standard",
+      "name_en": "Testing Environment Security Standard",
+      "name_ar": "معيار البيئة الاختبارية TEST",
+      "wave": 5,
+      "depends_on": ["POL-33", "POL-18"]
+    },
+    {
+      "id": "STD-19",
+      "type": "standard",
+      "name_en": "Segregation of Duties Standard",
+      "name_ar": "معيار فصل المهام",
+      "wave": 5,
+      "depends_on": ["POL-01", "POL-21"]
+    },
+    {
+      "id": "STD-20",
+      "type": "standard",
+      "name_en": "Storage Media Security Standard",
+      "name_ar": "معيار وسائط التخزين",
+      "wave": 5,
+      "depends_on": ["POL-30", "POL-17"]
+    },
+    {
+      "id": "STD-21",
+      "type": "standard",
+      "name_en": "Penetration Testing and Vulnerability Management Standard",
+      "name_ar": "معيار اختبار الاختراق وإدارة الثغرات",
+      "wave": 5,
+      "depends_on": ["POL-02", "POL-03", "POL-34"]
+    },
+    {
+      "id": "STD-22",
+      "type": "standard",
+      "name_en": "Patch and Update Management Standard",
+      "name_ar": "معيار إدارة حزم التحديثات والإصلاحات",
+      "wave": 2,
+      "depends_on": ["POL-05", "POL-11"]
+    },
+    {
+      "id": "STD-23",
+      "type": "standard",
+      "name_en": "Secure Application Development Standard",
+      "name_ar": "معيار التطوير الآمن للتطبيقات",
+      "wave": 2,
+      "depends_on": ["POL-33", "POL-32"]
+    },
+    {
+      "id": "STD-24",
+      "type": "standard",
+      "name_en": "Advanced Persistent Threat Protection Standard",
+      "name_ar": "معيار الحماية من التهديدات المستمرة المتقدمة APT",
+      "wave": 5,
+      "depends_on": ["POL-06", "POL-07"]
+    },
+    {
+      "id": "STD-25",
+      "type": "standard",
+      "name_en": "DDoS Protection Standard",
+      "name_ar": "معيار الحماية من هجمات حجب الخدمة الموزعة DDOS",
+      "wave": 5,
+      "depends_on": ["POL-28", "POL-06"]
+    },
+    {
+      "id": "STD-26",
+      "type": "standard",
+      "name_en": "Identity and Access Management Standard",
+      "name_ar": "معيار إدارة هويات الدخول والصلاحيات",
+      "wave": 2,
+      "depends_on": ["POL-09", "POL-12"]
+    },
+    {
+      "id": "STD-27",
+      "type": "standard",
+      "name_en": "Virtualization Security Standard",
+      "name_ar": "معيار أمن البيئة الافتراضية",
+      "wave": 5,
+      "depends_on": ["POL-16", "POL-28"]
+    },
+    {
+      "id": "STD-28",
+      "type": "standard",
+      "name_en": "Social Media Security Standard",
+      "name_ar": "معيار أمن وسائل التواصل الاجتماعية",
+      "wave": 5,
+      "depends_on": ["POL-20", "POL-12"]
+    },
+    {
+      "id": "STD-29",
+      "type": "standard",
+      "name_en": "Backup Security Standard",
+      "name_ar": "معيار النسخ الاحتياطي",
+      "wave": 2,
+      "depends_on": ["POL-04", "POL-19"]
+    },
+    {
+      "id": "STD-30",
+      "type": "standard",
+      "name_en": "Email Security Standard",
+      "name_ar": "معيار حماية البريد الإلكتروني",
+      "wave": 5,
+      "depends_on": ["POL-26", "POL-12"]
+    },
+    {
+      "id": "STD-31",
+      "type": "standard",
+      "name_en": "Web Application Security Standard",
+      "name_ar": "معيار حماية تطبيقات الويب",
+      "wave": 2,
+      "depends_on": ["POL-32", "POL-33"]
+    },
+    {
+      "id": "STD-32",
+      "type": "standard",
+      "name_en": "Physical Security Standard",
+      "name_ar": "معيار الأمن المادي",
+      "wave": 2,
+      "depends_on": ["POL-15", "POL-12"]
+    },
+
+    {
+      "id": "PRC-01",
+      "type": "procedure",
+      "name_en": "Cybersecurity Incident Management Procedure",
+      "name_ar": "إجراء إدارة الحوادث السيبرانية",
+      "wave": 3,
+      "depends_on": ["POL-06", "STD-02", "STD-03"]
+    },
+    {
+      "id": "PRC-02",
+      "type": "procedure",
+      "name_en": "Alert and False Positive Management Procedure",
+      "name_ar": "إجراء إدارة التنبيهات والحالات الخاطئة",
+      "wave": 3,
+      "depends_on": ["POL-07", "STD-03", "STD-11"]
+    },
+    {
+      "id": "PRC-03",
+      "type": "procedure",
+      "name_en": "Detection Rule Management Procedure",
+      "name_ar": "إجراء إدارة قواعد الكشف والتحليل",
+      "wave": 3,
+      "depends_on": ["POL-07", "STD-03", "STD-11"]
+    },
+    {
+      "id": "PRC-04",
+      "type": "procedure",
+      "name_en": "Cyber Threat Intelligence Management Procedure",
+      "name_ar": "إجراء إدارة المعلومات الاستباقية",
+      "wave": 3,
+      "depends_on": ["POL-06", "STD-02"]
+    },
+    {
+      "id": "PRC-05",
+      "type": "procedure",
+      "name_en": "Cyber Threat Hunting Procedure",
+      "name_ar": "إجراء عمليات اصطياد التهديدات السيبرانية",
+      "wave": 3,
+      "depends_on": ["POL-06", "STD-11"]
+    },
+    {
+      "id": "PRC-06",
+      "type": "procedure",
+      "name_en": "Cloud Security and Disaster Recovery Procedure",
+      "name_ar": "إجراء إدارة الحوسبة السحابية والاستعادة الشاملة",
+      "wave": 6,
+      "depends_on": ["POL-16", "POL-19", "STD-16", "STD-29"]
+    },
+    {
+      "id": "PRC-07",
+      "type": "procedure",
+      "name_en": "Application Installation Approval Procedure",
+      "name_ar": "إجراء الموافقة على تثبيت التطبيقات على الأجهزة والخوادم",
+      "wave": 6,
+      "depends_on": ["POL-10", "STD-05", "STD-06"]
+    },
+    {
+      "id": "PRC-08",
+      "type": "procedure",
+      "name_en": "Web Access and Exception Management Procedure",
+      "name_ar": "إجراء إدارة الوصول للمواقع والاستثناءات",
+      "wave": 6,
+      "depends_on": ["POL-10", "POL-12", "STD-07"]
+    },
+    {
+      "id": "PRC-09",
+      "type": "procedure",
+      "name_en": "Network Device Change Management Procedure",
+      "name_ar": "إجراء إدارة التغييرات على أجهزة الشبكة",
+      "wave": 3,
+      "depends_on": ["POL-28", "STD-07", "STD-22"]
+    },
+    {
+      "id": "PRC-10",
+      "type": "procedure",
+      "name_en": "Data Loss Prevention (DLP) Management Procedure",
+      "name_ar": "إجراء إدارة منع فقدان البيانات (DLP)",
+      "wave": 3,
+      "depends_on": ["POL-17", "STD-09"]
+    },
+    {
+      "id": "PRC-11",
+      "type": "procedure",
+      "name_en": "Cybersecurity Simulation Exercises Procedure",
+      "name_ar": "إجراء تمارين محاكاة الأمن السيبراني",
+      "wave": 6,
+      "depends_on": ["POL-06", "POL-19", "STD-02"]
+    },
+    {
+      "id": "PRC-12",
+      "type": "procedure",
+      "name_en": "Cyber Resilience Testing Procedure",
+      "name_ar": "إجراء تمارين الصمود الأمني السيبراني",
+      "wave": 6,
+      "depends_on": ["POL-19", "STD-16"]
+    },
+    {
+      "id": "PRC-13",
+      "type": "procedure",
+      "name_en": "Third-Party Cybersecurity Assessment Procedure",
+      "name_ar": "إجراء تقييم الأمن السيبراني للأطراف الخارجية",
+      "wave": 6,
+      "depends_on": ["POL-14", "STD-14", "STD-15"]
+    },
+    {
+      "id": "PRC-14",
+      "type": "procedure",
+      "name_en": "National Event Cybersecurity Preparedness Procedure",
+      "name_ar": "إجراء إدارة المناسبات والأحداث الوطنية",
+      "wave": 6,
+      "depends_on": ["POL-01", "POL-06", "POL-19"]
+    },
+    {
+      "id": "PRC-15",
+      "type": "procedure",
+      "name_en": "Cybersecurity Awareness and Training Procedure",
+      "name_ar": "إجراء البرامج التدريبية والتوعوية",
+      "wave": 3,
+      "depends_on": ["POL-21", "POL-01"]
+    },
+    {
+      "id": "PRC-16",
+      "type": "procedure",
+      "name_en": "Virtual Network Service Deployment Procedure",
+      "name_ar": "إجراء نشر خدمة على الشبكة الافتراضية",
+      "wave": 6,
+      "depends_on": ["POL-16", "STD-27", "STD-07"]
+    },
+    {
+      "id": "PRC-17",
+      "type": "procedure",
+      "name_en": "Remote Access and VPN Management Procedure",
+      "name_ar": "إجراء إدارة الوصول عن بعد والشبكة الافتراضية الخاصة",
+      "wave": 6,
+      "depends_on": ["POL-24", "POL-09", "STD-26", "STD-07"]
+    },
+    {
+      "id": "PRC-18",
+      "type": "procedure",
+      "name_en": "Integrated Entity Access to Internal Services Procedure",
+      "name_ar": "إجراء دخول الجهات المنظومة إلى خدمات الوزارة الداخلية",
+      "wave": 6,
+      "depends_on": ["POL-09", "STD-26", "POL-12"]
+    },
+    {
+      "id": "PRC-19",
+      "type": "procedure",
+      "name_en": "Cybersecurity Planning and Budgeting Procedure",
+      "name_ar": "إجراء إدارة التخطيط المتكامل والميزانية",
+      "wave": 6,
+      "depends_on": ["POL-01", "POL-08"]
+    },
+    {
+      "id": "PRC-20",
+      "type": "procedure",
+      "name_en": "Cybersecurity Program and Project Management Procedure",
+      "name_ar": "إجراء إدارة مشاريع الأمن السيبراني الشاملة",
+      "wave": 6,
+      "depends_on": ["POL-01", "POL-18", "POL-08"]
+    },
+    {
+      "id": "PRC-21",
+      "type": "procedure",
+      "name_en": "Security Review for Projects Procedure",
+      "name_ar": "إجراء المراجعة الأمنية للمشاريع",
+      "wave": 3,
+      "depends_on": ["POL-18", "POL-33", "STD-23"]
+    },
+    {
+      "id": "PRC-22",
+      "type": "procedure",
+      "name_en": "System Change Request Handling Procedure",
+      "name_ar": "إجراء معالجة طلبات التغيير على الأنظمة",
+      "wave": 3,
+      "depends_on": ["POL-05", "POL-11", "STD-22", "STD-08"]
+    },
+    {
+      "id": "PRC-23",
+      "type": "procedure",
+      "name_en": "Cybersecurity Exception Management Procedure",
+      "name_ar": "إجراء إدارة استثناءات الأمن السيبراني",
+      "wave": 3,
+      "depends_on": ["POL-12", "POL-08", "STD-15"]
+    },
+    {
+      "id": "PRC-24",
+      "type": "procedure",
+      "name_en": "Cybersecurity Violation Management Procedure",
+      "name_ar": "إجراء إدارة مخالفات الأمن السيبراني",
+      "wave": 3,
+      "depends_on": ["POL-12", "POL-01"]
+    },
+    {
+      "id": "PRC-25",
+      "type": "procedure",
+      "name_en": "Vulnerability Assessment and Remediation Procedure",
+      "name_ar": "إجراء تقييم الثغرات وإدارة معالجتها الشاملة",
+      "wave": 3,
+      "depends_on": ["POL-03", "POL-05", "STD-21", "STD-22"]
+    },
+    {
+      "id": "PRC-26",
+      "type": "procedure",
+      "name_en": "Penetration Testing Procedure",
+      "name_ar": "إجراء اختبار اختراق أنظمة الوزارة",
+      "wave": 3,
+      "depends_on": ["POL-02", "STD-21", "POL-34"]
+    },
+    {
+      "id": "PRC-27",
+      "type": "procedure",
+      "name_en": "Security Testing Tools Management Procedure",
+      "name_ar": "إجراء إدارة أدوات التقييم والاختبار",
+      "wave": 3,
+      "depends_on": ["POL-02", "STD-21", "POL-34"]
+    },
+    {
+      "id": "PRC-28",
+      "type": "procedure",
+      "name_en": "Digital Evidence and Chain of Custody Procedure",
+      "name_ar": "إجراء إدارة الأدلة الرقمية وسلسلة الحيازة",
+      "wave": 6,
+      "depends_on": ["POL-15", "POL-06", "POL-12"]
+    },
+    {
+      "id": "PRC-29",
+      "type": "procedure",
+      "name_en": "Brand Protection and Anti-Phishing Procedure",
+      "name_ar": "إجراء إدارة حماية العلامة التجارية",
+      "wave": 6,
+      "depends_on": ["POL-20", "POL-26", "STD-30"]
+    },
+    {
+      "id": "PRC-30",
+      "type": "procedure",
+      "name_en": "Suspicious Email and File Handling Procedure",
+      "name_ar": "إجراء إدارة الملفات والبريد الإلكتروني المشبوه",
+      "wave": 3,
+      "depends_on": ["POL-26", "POL-23", "STD-30", "STD-10"]
+    },
+    {
+      "id": "PRC-31",
+      "type": "procedure",
+      "name_en": "Privilege Review Procedure",
+      "name_ar": "إجراء إدارة ومراجعة الصلاحيات",
+      "wave": 3,
+      "depends_on": ["POL-09", "STD-26"]
+    },
+    {
+      "id": "PRC-32",
+      "type": "procedure",
+      "name_en": "Third-Party and Vendor Access Management Procedure",
+      "name_ar": "إجراء إدارة وصول الأطراف الخارجية والموردين",
+      "wave": 3,
+      "depends_on": ["POL-14", "POL-09", "STD-14", "STD-26"]
+    },
+    {
+      "id": "PRC-33",
+      "type": "procedure",
+      "name_en": "Identity Lifecycle Management Procedure",
+      "name_ar": "إجراء إدارة دورة حياة الحسابات الشاملة",
+      "wave": 3,
+      "depends_on": ["POL-09", "STD-26"]
+    },
+    {
+      "id": "PRC-34",
+      "type": "procedure",
+      "name_en": "Application Privilege Management Procedure",
+      "name_ar": "إجراء إدارة صلاحيات التطبيقات والأنظمة",
+      "wave": 6,
+      "depends_on": ["POL-32", "POL-09", "STD-26", "STD-31"]
+    },
+    {
+      "id": "PRC-35",
+      "type": "procedure",
+      "name_en": "Cybersecurity Risk Management Procedure",
+      "name_ar": "إجراء إدارة المخاطر السيبرانية",
+      "wave": 6,
+      "depends_on": ["POL-08", "STD-15"]
+    },
+    {
+      "id": "PRC-36",
+      "type": "procedure",
+      "name_en": "Sector Cybersecurity Committee Governance Procedure",
+      "name_ar": "إجراء حوكمة اللجنة القطاعية ومبادراتها",
+      "wave": 6,
+      "depends_on": ["POL-01"]
+    },
+    {
+      "id": "PRC-37",
+      "type": "procedure",
+      "name_en": "Cybersecurity Documentation Development and Update Procedure",
+      "name_ar": "إجراء تطوير وتحديث وثائق الأمن السيبراني",
+      "wave": 6,
+      "depends_on": ["POL-01", "POL-34"]
+    },
+    {
+      "id": "PRC-38",
+      "type": "procedure",
+      "name_en": "Cybersecurity Governance Reporting Procedure",
+      "name_ar": "إجراء إدارة الاجتماعات والتقارير الإدارية",
+      "wave": 6,
+      "depends_on": ["POL-01", "POL-08", "POL-34"]
+    },
+    {
+      "id": "PRC-39",
+      "type": "procedure",
+      "name_en": "Security Process Improvement Procedure",
+      "name_ar": "إجراء تطوير وتحسين الإجراءات الأمنية",
+      "wave": 6,
+      "depends_on": ["POL-01", "POL-34"]
+    },
+    {
+      "id": "PRC-40",
+      "type": "procedure",
+      "name_en": "Data and Removable Media Management Procedure",
+      "name_ar": "إجراء إدارة البيانات والوسائط الخارجية",
+      "wave": 3,
+      "depends_on": ["POL-17", "POL-30", "STD-09", "STD-20"]
+    },
+    {
+      "id": "PRC-41",
+      "type": "procedure",
+      "name_en": "Endpoint Protection Management Procedure",
+      "name_ar": "إجراء حماية الأجهزة الطرفية وأدوات الحماية",
+      "wave": 6,
+      "depends_on": ["POL-25", "POL-23", "STD-05", "STD-10"]
+    },
+    {
+      "id": "PRC-42",
+      "type": "procedure",
+      "name_en": "Secure Software Development Lifecycle Procedure",
+      "name_ar": "إجراء دورة حياة تطوير البرمجيات الآمنة",
+      "wave": 6,
+      "depends_on": ["POL-33", "STD-23"]
+    },
+    {
+      "id": "PRC-43",
+      "type": "procedure",
+      "name_en": "Privileged Password Management Procedure",
+      "name_ar": "إجراء إدارة كلمات المرور للحسابات العالية",
+      "wave": 3,
+      "depends_on": ["POL-09", "POL-22", "STD-26", "STD-13"]
+    },
+    {
+      "id": "PRC-44",
+      "type": "procedure",
+      "name_en": "Multi-Factor Authentication (MFA) Management Procedure",
+      "name_ar": "إجراء إدارة المصادقة متعددة العوامل (MFA)",
+      "wave": 3,
+      "depends_on": ["POL-09", "STD-26"]
+    }
+  ]
+}

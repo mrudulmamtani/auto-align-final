@@ -1,0 +1,80 @@
+﻿[
+  {
+    "framework_name": "SOC 2",
+    "version": "2017",
+    "main_domain_id": "CC",
+    "main_domain_name": "Common Criteria",
+    "subdomain_id": "CC1.1",
+    "subdomain_name": "Control environment",
+    "objective": "Establish governance",
+    "control_id": "CC1.1",
+    "control_statement": "The entity demonstrates a commitment to integrity and ethical values.",
+    "subcontrols": ["Code of conduct", "Board oversight"],
+    "source_page": "5"
+  },
+  {
+    "framework_name": "SOC 2",
+    "version": "2017",
+    "main_domain_id": "CC",
+    "main_domain_name": "Common Criteria",
+    "subdomain_id": "CC3.2",
+    "subdomain_name": "Risk assessment",
+    "objective": "Identify risks",
+    "control_id": "CC3.2",
+    "control_statement": "The entity specifies objectives to enable risk identification and assessment.",
+    "subcontrols": ["Risk register", "Impact analysis"],
+    "source_page": "8"
+  },
+  {
+    "framework_name": "SOC 2",
+    "version": "2017",
+    "main_domain_id": "CC",
+    "main_domain_name": "Common Criteria",
+    "subdomain_id": "CC6.1",
+    "subdomain_name": "Logical access",
+    "objective": "Restrict access",
+    "control_id": "CC6.1",
+    "control_statement": "Logical access security measures are implemented to meet objectives.",
+    "subcontrols": ["Access reviews", "Authentication"],
+    "source_page": "12"
+  },
+  {
+    "framework_name": "SOC 2",
+    "version": "2017",
+    "main_domain_id": "CC",
+    "main_domain_name": "Common Criteria",
+    "subdomain_id": "CC7.2",
+    "subdomain_name": "Monitoring",
+    "objective": "Detect anomalies",
+    "control_id": "CC7.2",
+    "control_statement": "The entity monitors system components and operations for anomalies.",
+    "subcontrols": ["SIEM", "Alert response"],
+    "source_page": "16"
+  },
+  {
+    "framework_name": "SOC 2",
+    "version": "2017",
+    "main_domain_id": "CC",
+    "main_domain_name": "Common Criteria",
+    "subdomain_id": "CC8.1",
+    "subdomain_name": "Change management",
+    "objective": "Control changes",
+    "control_id": "CC8.1",
+    "control_statement": "Changes are authorized, designed, developed, and implemented.",
+    "subcontrols": ["Change approvals", "Segregation of duties"],
+    "source_page": "18"
+  },
+  {
+    "framework_name": "SOC 2",
+    "version": "2017",
+    "main_domain_id": "CC",
+    "main_domain_name": "Common Criteria",
+    "subdomain_id": "CC9.2",
+    "subdomain_name": "Vendor management",
+    "objective": "Manage third parties",
+    "control_id": "CC9.2",
+    "control_statement": "Third parties are managed consistent with objectives.",
+    "subcontrols": ["Vendor assessments", "Contract clauses"],
+    "source_page": "20"
+  }
+]

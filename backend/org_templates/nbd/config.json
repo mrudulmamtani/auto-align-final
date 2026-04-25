@@ -1,0 +1,20 @@
+{
+  "org_name": "xyz",
+  "org_id": "nbd",
+  "template_id": "6dff73c4",
+  "logo_filename": null,
+  "primary_color": "#1F497D",
+  "secondary_color": "#4472C4",
+  "accent_color": "#22C55E",
+  "font_family": "Calibri",
+  "heading_font": "Calibri",
+  "header_left": "",
+  "header_center": "",
+  "header_right": "CONFIDENTIAL",
+  "footer_left": "",
+  "footer_center": "Page {page} of {total}",
+  "footer_right": "",
+  "page_size": "A4",
+  "cover_bg_color": null,
+  "created_at": "2026-03-07T01:44:07.992448+00:00"
+}

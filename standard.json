@@ -1,0 +1,438 @@
+{
+  "standard_document_schema": {
+    "document_type": "Standard",
+    "document_family": "ClientX Ministerial Cybersecurity Standard",
+    "family_type": "Operational Standard",
+    "language_mode": "English technical language",
+    "purpose": "Produce ministry-grade cybersecurity standards that are operational, enforceable, visually consistent, and structurally aligned to ClientX standard model.",
+    "audience": [
+      "cybersecurity governance teams",
+      "control owners",
+      "system owners",
+      "internal review and audit stakeholders",
+      "downstream procedure authors"
+    ],
+    "metadata": {
+      "required_fields": [
+        "document_id",
+        "document_title_ar",
+        "optional_document_title_en",
+        "document_type",
+        "version_number",
+        "issue_date",
+        "classification",
+        "document_owner",
+        "department",
+        "publication_location"
+      ],
+      "optional_fields": [
+        "approval_date",
+        "revision_history",
+        "approval_roles",
+        "document_short_title"
+      ]
+    },
+    "page_model": {
+      "target_page_count": {
+        "min": 14,
+        "typical": 17,
+        "max": 20
+      },
+      "page_allocation": {
+        "cover_page": 1,
+        "notice_page": 1,
+        "document_information_and_approval": 1,
+        "table_of_contents": 1,
+        "definitions": "1-2",
+        "objective_and_scope": 1,
+        "core_standards_section": "7-9",
+        "closing_governance_sections": "1-2"
+      }
+    },
+    "visual_system": {
+      "rtl": true,
+      "branding": {
+        "include_ministry_logo_top_right": true,
+        "include_Client_Slogan_top_left": true
+      },
+      "cover_page": {
+        "style": "full-page branded cover",
+        "background": "dark green ministry gradient",
+        "title_position": "center-lower third",
+        "metadata_position": "bottom-right",
+        "required_fields": [
+          "title_ar",
+          "version_number",
+          "classification"
+        ]
+      },
+      "internal_pages": {
+        "header": {
+          "show_logos": true,
+          "show_document_title": false
+        },
+        "footer": {
+          "show_page_number": true,
+          "show_classification_bilingual": true,
+          "show_document_short_title": true
+        },
+        "watermark": {
+          "enabled": true,
+          "text": "Draft",
+          "style": "large diagonal light gray"
+        }
+      },
+      "accent_colors": {
+        "primary_dark_green": "#0F4D43",
+        "secondary_green": "#2E7D6B",
+        "neutral_light": "#F4F4F4",
+        "border_gray": "#D9D9D9"
+      },
+      "tables": {
+        "header_fill": "primary_dark_green",
+        "header_text_color": "white",
+        "body_fill": "white",
+        "border_style": "thin gray grid"
+      },
+      "typography": {
+        "title_weight": "bold",
+        "section_heading_weight": "bold",
+        "body_style": "formal Arabic prose",
+        "technical_gloss_style": "Arabic term followed by English in parentheses when needed"
+      }
+    },
+    "document_order": [
+      "cover",
+      "notice",
+      "document_information_and_approval",
+      "table_of_contents",
+      "1. abbreviations_and_definitions",
+      "2. objective",
+      "3. scope_of_work_and_applicability",
+      "4. standards",
+      "5. exceptions",
+      "6. roles_and_responsibilities",
+      "7. update_and_review",
+      "8. compliance_with_the_standard"
+    ],
+    "section_blueprints": {
+      "cover": {
+        "required_elements": [
+          "document_title_ar",
+          "optional_document_title_en_if_used",
+          "version_number",
+          "classification"
+        ],
+        "writing_rules": [
+          "No body prose on cover",
+          "Minimal metadata only",
+          "Title must dominate the page"
+        ]
+      },
+      "notice": {
+        "required_elements": [
+          "ownership_notice_ar",
+          "ownership_notice_en",
+          "prohibition_on_copying_or_disclosure",
+          "contact_reference_to_cybersecurity_department"
+        ],
+        "writing_rules": [
+          "Short, fixed, legal-administrative tone",
+          "No domain content here"
+        ]
+      },
+      "document_information_and_approval": {
+        "required_tables": [
+          "Document Information",
+          "Document Revision History",
+          "Document Approval"
+        ],
+        "required_fields": {
+          "document_name": true,
+          "version": true,
+          "issue_date": true,
+          "approval_date": true,
+          "document_owner": true,
+          "department": true,
+          "document_type": true,
+          "publication_location": true,
+          "revision_history": true,
+          "approval_roles": true
+        },
+        "writing_rules": [
+          "Use structured tables, not prose",
+          "Portal/intranet should be declared as authoritative source when applicable"
+        ]
+      },
+      "1. abbreviations_and_definitions": {
+        "function": "Create shared vocabulary and remove ambiguity",
+        "structure": {
+          "intro_sentence": true,
+          "definition_table": true
+        },
+        "table_columns": [
+          "Term",
+          "Definition"
+        ],
+        "expected_length": {
+          "terms_min": 6,
+          "terms_max": 15
+        },
+        "writing_rules": [
+          "Definitions must be operational, not dictionary-like",
+          "Use English glosses only for true technical terms",
+          "Keep each definition to 1-4 lines"
+        ]
+      },
+      "2. objective": {
+        "function": "State control intent, business purpose, and risk rationale",
+        "structure": {
+          "paragraph_count": "2-4"
+        },
+        "expected_content": [
+          "what the standard regulates",
+          "why the standard exists",
+          "what risks it reduces",
+          "what governance or regulatory alignment it supports"
+        ],
+        "writing_rules": [
+          "Dense, formal prose",
+          "No bullets unless unavoidable",
+          "No generic mission language"
+        ]
+      },
+      "3. scope_of_work_and_applicability": {
+        "function": "Bound applicability with operational specificity",
+        "structure": {
+          "intro_paragraph": true,
+          "categorized_subscope": true
+        },
+        "preferred_subcategories": [
+          "Systems and Applications",
+          "Roles and Permissions",
+          "Critical Processes and Transactions",
+          "Covered Persons and Entities"
+        ],
+        "writing_rules": [
+          "Scope must be explicit and exhaustive",
+          "Use categorized bullets under each scope domain",
+          "Focus on applicability, not control requirements"
+        ]
+      },
+      "4. standards": {
+        "function": "Carry the majority of the document’s substance",
+        "word_share_target": "45% to 60% of total document",
+        "mandatory_substructure": [
+          "4.1 domain cluster",
+          "4.2 domain cluster",
+          "4.3 domain cluster",
+          "4.4 domain cluster if needed"
+        ],
+        "domain_cluster_template": {
+          "required_fields": [
+            "title",
+            "objective",
+            "potential_risks",
+            "numbered_operative_clauses"
+          ],
+          "operative_clause_style": {
+            "numbering_pattern": "4.x.y",
+            "sentence_style": "full normative sentence",
+            "verbs": {
+              "mandatory": [
+                "must",
+                "must not"
+              ],
+              "guidance": [
+                "should",
+                "should take into consideration"
+              ]
+            },
+            "typical_clause_length": "2-5 lines",
+            "examples_allowed": true,
+            "examples_style": "only where they clarify application"
+          }
+        },
+        "recommended_cluster_types": [
+          {
+            "id": "4.1",
+            "name_pattern": "Governance of [domain] and Management of [risk/control area]",
+            "content_pattern": [
+              "foundational governance requirements",
+              "control design expectations",
+              "role/accountability logic"
+            ]
+          },
+          {
+            "id": "4.2",
+            "name_pattern": "Mandatory Requirements",
+            "content_pattern": [
+              "core enforceable control requirements",
+              "preventive and detective controls",
+              "approval, exception, and evidence obligations"
+            ]
+          },
+          {
+            "id": "4.3",
+            "name_pattern": "Time-Based Controls and Periodic Reviews",
+            "content_pattern": [
+              "review cycles",
+              "validity windows",
+              "retention periods",
+              "remediation deadlines"
+            ]
+          },
+          {
+            "id": "4.4",
+            "name_pattern": "Implementation Guidance for [domain]",
+            "content_pattern": [
+              "implementation guidance",
+              "evidence expectations",
+              "metrics",
+              "assurance activities"
+            ]
+          }
+        ]
+      },
+      "5. exceptions": {
+        "function": "Constrain and govern deviations",
+        "structure": {
+          "concise_section": true,
+          "may_include_short_bullets": true
+        },
+        "required_content": [
+          "documented justification",
+          "risk assessment",
+          "compensating controls",
+          "approval by authorized authority",
+          "time-bound validity",
+          "periodic review"
+        ],
+        "writing_rules": [
+          "Short but substantive",
+          "No open-ended exemptions"
+        ]
+      },
+      "6. roles_and_responsibilities": {
+        "function": "Assign accountability without repeating procedures",
+        "structure": {
+          "concise_table_or_short_bullets": true
+        },
+        "expected_roles": [
+          "cybersecurity department",
+          "control owner / process owner",
+          "system owner",
+          "review / audit / compliance role"
+        ],
+        "writing_rules": [
+          "1-3 lines per role",
+          "No generic responsibilities",
+          "Tie each role to actual document obligations"
+        ]
+      },
+      "7. update_and_review": {
+        "function": "Set maintenance cadence and trigger events",
+        "structure": {
+          "short_prose": true
+        },
+        "required_content": [
+          "planned review frequency",
+          "out-of-cycle review triggers",
+          "approval of updates"
+        ],
+        "writing_rules": [
+          "Very concise",
+          "Administrative tone"
+        ]
+      },
+      "8. compliance_with_the_standard": {
+        "function": "State mandatory compliance and consequence model",
+        "structure": {
+          "short_prose": true
+        },
+        "required_content": [
+          "mandatory compliance",
+          "review/testing/audit as monitoring methods",
+          "corrective action or escalation for non-compliance"
+        ],
+        "writing_rules": [
+          "Brief closing governance statement"
+        ]
+      }
+    },
+    "writing_rules_global": {
+      "subject_entity": "the Ministry",
+      "style": [
+        "formal",
+        "direct",
+        "operational",
+        "government-standard tone"
+      ],
+      "do": [
+        "write enforceable statements",
+        "prefer numbered clauses in Section 4",
+        "use bullets mainly for scope categories, evidence lists, metrics, and assurance activities",
+        "include technical English terms only where they are standard domain terms",
+        "keep prose dense but readable"
+      ],
+      "do_not": [
+        "write like a policy or awareness memo",
+        "write procedure steps in sequence form unless section is explicitly guidance",
+        "use marketing language",
+        "over-explain obvious concepts",
+        "leave major sections empty",
+        "flatten all controls into one long list"
+      ]
+    },
+    "statement_depth_rules": {
+      "objective_sections": {
+        "style": "2-4 paragraphs, compact but meaningful"
+      },
+      "scope_sections": {
+        "style": "1 intro paragraph + categorized bullets"
+      },
+      "core_control_clauses": {
+        "style": "1 strong control idea per clause, 2-5 lines"
+      },
+      "evidence_metrics_assurance": {
+        "style": "enumerated lists, precise, auditable"
+      },
+      "closing_sections": {
+        "style": "short and compressed"
+      }
+    },
+    "content_balance_rules": {
+      "definitions_share": "5% to 10%",
+      "objective_scope_share": "10% to 15%",
+      "section_4_share": "45% to 60%",
+      "closing_governance_share": "10% to 15%"
+    },
+    "validation_rules": [
+      "Document must remain recognizably a standard, not a policy or procedure",
+      "Section 4 must be the dominant section by depth and page count",
+      "Every major Section 4 cluster must include objective and potential_risks before operative clauses",
+      "Definitions must be in a table",
+      "Scope must be categorized",
+      "Exceptions must be time-bound and compensating-control based",
+      "Roles must be specific and compact",
+      "Review and compliance sections must be short",
+      "Formatting must preserve ministry visual identity",
+      "Classification footer must persist on internal pages"
+    ],
+    "output_contract": {
+      "required_output_parts": [
+        "formatted title and metadata",
+        "full Arabic document content",
+        "stable section numbering",
+        "table-friendly structures for definitions and metadata",
+        "operationally enforceable clauses"
+      ],
+      "optional_output_parts": [
+        "control mappings",
+        "revision history table",
+        "approval table",
+        "bilingual cover elements"
+      ]
+    }
+  }
+}

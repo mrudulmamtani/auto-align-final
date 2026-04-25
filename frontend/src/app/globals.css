@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --pwc-orange: #D04A02;
+  --pwc-orange-hover: #EB6524;
+  --pwc-bg: #F2F2F2;
+  --pwc-surface: #FFFFFF;
+  --pwc-surface-raised: #F7F7F7;
+  --pwc-border: #E0E0E0;
+  --pwc-border-bright: #BDBDBD;
+  --pwc-text: #1A1A1A;
+  --pwc-text-dim: #555555;
+  --pwc-text-muted: #9E9E9E;
+  /* risk colors */
+  --pwc-critical: #DC2626;
+  --pwc-high: #D97706;
+  --pwc-medium: #B45309;
+  --pwc-low: #16A34A;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--pwc-bg);
+  color: var(--pwc-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--pwc-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--pwc-border-bright);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pwc-text-muted);
+}
